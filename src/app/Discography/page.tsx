@@ -58,7 +58,7 @@ export default function Discography() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="e8e8e8"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Home
@@ -70,7 +70,7 @@ export default function Discography() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="white"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 About
@@ -81,7 +81,7 @@ export default function Discography() {
               fontSize="3xl"
               fontWeight="bold"
               color="e8e8e8"
-              _hover={{ color: "#e5a734" }}
+              _hover={{ color: "#e88700" }}
               textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
             >
               Live
@@ -92,7 +92,7 @@ export default function Discography() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="e8e8e8"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Movie
@@ -104,7 +104,7 @@ export default function Discography() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="e8e8e8"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Store
@@ -116,7 +116,9 @@ export default function Discography() {
       <Box ml={300} mt={55}>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            <BreadcrumbLink href="/" _hover={{ color: "#e88700" }}>
+              Home
+            </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
             <BreadcrumbLink href="#">Discography</BreadcrumbLink>

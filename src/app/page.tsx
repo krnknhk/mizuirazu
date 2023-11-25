@@ -139,7 +139,7 @@ export default function Home() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="black"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 About
@@ -151,7 +151,7 @@ export default function Home() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="black"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Discography
@@ -162,7 +162,7 @@ export default function Home() {
               fontSize="3xl"
               fontWeight="bold"
               color="black"
-              _hover={{ color: "#e5a734" }}
+              _hover={{ color: "#e88700" }}
               textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
             >
               Live
@@ -173,7 +173,7 @@ export default function Home() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="black"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Movie
@@ -185,7 +185,7 @@ export default function Home() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="black"
-                _hover={{ color: "#e5a734" }}
+                _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Store
@@ -203,7 +203,7 @@ export default function Home() {
               onClick={handlePlay}
               leftIcon={<MdOutlinePlayCircle size={130} />}
               bg={"transparent"}
-              _hover={{ color: "#e5a734", bg: "transparent" }}
+              _hover={{ color: "#e88700", bg: "transparent" }}
             ></Button>
           )}
           {!showPlayButton && (
