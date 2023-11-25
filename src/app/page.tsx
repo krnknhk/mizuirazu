@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Button, Flex, Spinner, Text, VStack } from "@chakra-ui/react";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import { MdOutlinePlayCircle } from "react-icons/md";
@@ -55,6 +56,13 @@ export default function Home() {
     play4();
   };
 
+  const handleMenuClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // イベント伝播を止める
+    if (!isClickable) return;
+
+    stops.forEach((stop) => stop());
+  };
+
   const handlePlay = () => {
     setShowPlayButton(false);
     setIsClickable(true);
@@ -98,6 +106,7 @@ export default function Home() {
         left={0}
         alignItems="flex-start"
         m={4}
+        zIndex={10}
       >
         <Box onClick={handleTitleClick}>
           <Text
@@ -116,7 +125,13 @@ export default function Home() {
         </Box>
 
         {isMenuOpen && (
-          <VStack bg="transparent" width="100%" ml={5} spacing={2}>
+          <VStack
+            bg="transparent"
+            width="100%"
+            ml={5}
+            spacing={2}
+            onClick={handleMenuClick}
+          >
             <Text
               p={4}
               fontSize="3xl"
@@ -126,15 +141,17 @@ export default function Home() {
             >
               News
             </Text>
-            <Text
-              p={4}
-              fontSize="3xl"
-              fontWeight="bold"
-              color="black"
-              className="menu-item"
-            >
-              About
-            </Text>
+            <Link href="/About">
+              <Text
+                p={4}
+                fontSize="3xl"
+                fontWeight="bold"
+                color="black"
+                className="menu-item"
+              >
+                About
+              </Text>
+            </Link>
             <Text
               p={4}
               fontSize="3xl"
@@ -165,7 +182,7 @@ export default function Home() {
               onClick={handlePlay}
               leftIcon={<MdOutlinePlayCircle size={130} />}
               bg={"transparent"}
-              _hover={{ color: "#FFFFFF", bg: "transparent" }}
+              _hover={{ color: "#e5a734", bg: "transparent" }}
             ></Button>
           )}
           {!showPlayButton && (
