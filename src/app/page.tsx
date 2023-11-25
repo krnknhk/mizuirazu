@@ -118,7 +118,7 @@ export default function Home() {
             ml={12}
             mt={10}
             fontFamily="Zen Kaku Gothic New, sans-serif"
-            className="text-shadow"
+            textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
           >
             水いらず
           </Text>
@@ -131,25 +131,30 @@ export default function Home() {
             ml={5}
             spacing={2}
             onClick={handleMenuClick}
+            className="menu-item"
           >
-            <Text
-              p={4}
-              fontSize="3xl"
-              fontWeight="bold"
-              color="black"
-              className="menu-item"
-            >
-              News
-            </Text>
             <Link href="/About">
               <Text
                 p={4}
                 fontSize="3xl"
                 fontWeight="bold"
                 color="black"
-                className="menu-item"
+                _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 About
+              </Text>
+            </Link>
+            <Link href="/Discography">
+              <Text
+                p={4}
+                fontSize="3xl"
+                fontWeight="bold"
+                color="black"
+                _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+              >
+                Discography
               </Text>
             </Link>
             <Text
@@ -157,19 +162,35 @@ export default function Home() {
               fontSize="3xl"
               fontWeight="bold"
               color="black"
-              className="menu-item"
-            >
-              Discography
-            </Text>
-            <Text
-              p={4}
-              fontSize="3xl"
-              fontWeight="bold"
-              color="black"
-              className="menu-item"
+              _hover={{ color: "#e5a734" }}
+              textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
             >
               Live
             </Text>
+            <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
+              <Text
+                p={4}
+                fontSize="3xl"
+                fontWeight="bold"
+                color="black"
+                _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+              >
+                Videos
+              </Text>
+            </Link>
+            <Link href="https://mizuirazuband.stores.jp/">
+              <Text
+                p={4}
+                fontSize="3xl"
+                fontWeight="bold"
+                color="black"
+                _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+              >
+                Store
+              </Text>
+            </Link>
           </VStack>
         )}
       </VStack>

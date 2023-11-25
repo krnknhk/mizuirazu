@@ -5,7 +5,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Center,
   Flex,
   Grid,
   Text,
@@ -15,7 +14,7 @@ import Link from "next/link";
 import { useState } from "react";
 import "../style.css";
 
-export default function About() {
+export default function Discography() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -27,8 +26,9 @@ export default function About() {
       direction="column"
       background="linear-gradient(to bottom, #582fb7 30%, #dce0f2 30%, #e8e8e8)"
       overflow="hidden"
+      maxH={"100%"}
     >
-      <VStack position="absolute" alignItems="flex-start" m={4} zIndex={10}>
+      <VStack position="absolute" alignItems="flex-start" m={4}>
         <Text
           fontSize="4xl"
           fontWeight="extrabold"
@@ -37,8 +37,8 @@ export default function About() {
           ml={68}
           mt={10}
           fontFamily="Zen Kaku Gothic New, sans-serif"
-          textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
           onClick={toggleMenu}
+          textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
         >
           水いらず
         </Text>
@@ -58,22 +58,22 @@ export default function About() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="e8e8e8"
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                 _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Home
               </Text>
             </Link>
-            <Link href="/Discography">
+            <Link href="/About">
               <Text
                 p={4}
                 fontSize="3xl"
                 fontWeight="bold"
-                color="e8e8e8"
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+                color="white"
                 _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
-                Discography
+                About
               </Text>
             </Link>
             <Text
@@ -81,8 +81,8 @@ export default function About() {
               fontSize="3xl"
               fontWeight="bold"
               color="e8e8e8"
-              textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               _hover={{ color: "#e5a734" }}
+              textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
             >
               Live
             </Text>
@@ -92,8 +92,8 @@ export default function About() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="e8e8e8"
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                 _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Videos
               </Text>
@@ -104,8 +104,8 @@ export default function About() {
                 fontSize="3xl"
                 fontWeight="bold"
                 color="e8e8e8"
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                 _hover={{ color: "#e5a734" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
                 Store
               </Text>
@@ -119,94 +119,102 @@ export default function About() {
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink href="#">About</BreadcrumbLink>
+            <BreadcrumbLink href="#">Discography</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
         <Box height="1px" backgroundColor="gray.200" width="90%" mt={5} />
       </Box>
-      <Flex
-        width="100%"
-        height="50vh"
-        alignItems="flex-end"
-        justifyContent="space-around"
-        px={10}
-        mb={35}
-      >
-        <Box
-          width="55%"
-          height="75%"
-          backgroundImage="url('/20210828_6.jpg')"
-          backgroundPosition="center"
-          backgroundRepeat="no-repeat"
-          backgroundSize="cover"
-          position="relative"
-          boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-        ></Box>
-
-        <Box
-          width="40%"
-          height="40%"
-          backgroundColor="#e3e3ed"
-          p={8}
-          overflowY="auto"
-          boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
-        >
-          <Text fontSize="md" color="black" fontWeight="bold">
-            2016年に結成された東京を拠点に活動する4人組インディ・ロック・バンド。アジアの民族音楽をもとに、スタンドアローン・コンプレックス(孤立した個人でありながらも、全体として集団的な行動を取る)なスタンスを心がけながら、独自の音楽を生み出す。メンバーは楽器よりもPCを愛用している。バンドは直接民主制を採用し、メンバー同士の仲は非常に良く、喧嘩は皆無。家が近いため、タクシー代が割り勘できる。思想や概念から作曲が始まり、家で楽曲制作を行なっている。
-          </Text>
-          <Box mt={7}>
-            <Text fontSize="md" color="black" as="i">
-              井上真 (vo,gt)、小宮山節己 (dr)、桜井晴紀 (key)、辻本秀太郎 (ba)
-            </Text>
-          </Box>
-        </Box>
-      </Flex>
-      <Center>
+      <VStack mt={150}>
         <Grid
-          templateColumns="repeat(12, 1fr)"
+          templateColumns="repeat(8, 1fr)"
           gap={10}
           p={10}
-          width="90%"
-          height="100vh"
+          width="80%"
+          height="40vh"
           justifyContent="center"
+          cursor="pointer"
         >
           <Box
-            gridColumn="1 / span 7"
-            gridRow="1 / span 3"
-            backgroundImage="url('/IMG_8393.JPG')"
+            gridColumn="1 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('/uturu.png')"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
           ></Box>
 
           <Box
-            gridColumn="8 / span 5"
-            gridRow="1 / span 3"
-            backgroundImage="url('/IMG_8394.JPG')"
+            gridColumn="3 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('/20210828_28.jpg')"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
           ></Box>
 
           <Box
-            gridColumn="1 / span 6"
-            gridRow="4 / span 3"
-            backgroundImage="url('/IMG_8395.JPG')"
+            gridColumn="5 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('/su-mu_single.png')"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
           ></Box>
-
           <Box
-            gridColumn="7 / span 6"
-            gridRow="4 / span 3"
-            backgroundImage="url('/IMG_8396.JPG')"
+            gridColumn="7 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('/hotonndokara_jacket.jpeg')"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
           ></Box>
         </Grid>
-      </Center>
+        <Grid
+          templateColumns="repeat(8, 1fr)"
+          gap={10}
+          p={10}
+          width="80%"
+          height="40vh"
+          justifyContent="center"
+          cursor="pointer"
+        >
+          <Box
+            gridColumn="1 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('/almostEmpty_single.png')"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+          ></Box>
+
+          <Box
+            gridColumn="3 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('/5dgt_B3I-1.jpeg')"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+          ></Box>
+
+          <Box
+            gridColumn="5 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('afternoon-night.jpeg')"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+          ></Box>
+
+          <Box
+            gridColumn="7 / span 2"
+            gridRow="1 / span 1"
+            backgroundImage="url('/monochrome.jpeg')"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+          ></Box>
+        </Grid>
+      </VStack>
     </Flex>
   );
 }
