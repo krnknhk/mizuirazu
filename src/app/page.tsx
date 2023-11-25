@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, Flex, Spinner } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import useSound from "use-sound";
@@ -14,6 +14,7 @@ export default function Home() {
   const [showPlayButton, setShowPlayButton] = useState(true);
   const [backgroundStyle, setBackgroundStyle] = useState({ opacity: 0.3 });
   const [cursorStyle, setCursorStyle] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   const [play1, { stop: stop1, sound: sound1 }] = useSound(soundFiles[0], {
     loop: true,
@@ -52,8 +53,12 @@ export default function Home() {
     setIsMuted(!isMuted);
   };
 
-  const isLoading =
+  useEffect(() => {
     sound1 === undefined || sound2 === undefined || sound3 === undefined;
+    setIsLoading(true);
+    sound1 && sound2 && sound3;
+    setIsLoading(false);
+  }, [sound1, sound2, sound3]);
 
   return (
     <Flex
