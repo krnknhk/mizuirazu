@@ -1,10 +1,11 @@
 "use client";
 
-import { Button, Flex, Spinner } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { Box, Button, Flex, Spinner, Text, VStack } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import useSound from "use-sound";
+import "./style.css";
 
 export default function Home() {
   const soundFiles = ["/uturu_edit.mp3", "/sumu_edit.mp3", "/bakeru_edit.mp3"];
@@ -28,10 +29,14 @@ export default function Home() {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
+  const [play4, { stop: stop4, sound: sound4 }] = useSound("/uturu_edit2.mp3", {
+    loop: true,
+    volume: isMuted ? 0 : 1,
+  });
 
   const plays = [play1, play2, play3];
-  const stops = [stop1, stop2, stop3];
-  const sounds = [sound1, sound2, sound3];
+  const stops = [stop1, stop2, stop3, stop4];
+  const sounds = [sound1, sound2, sound3, sound4];
 
   const handleScreenClick = () => {
     if (!isClickable) return;
@@ -40,6 +45,14 @@ export default function Home() {
     const nextSound = (currentSound + 1) % soundFiles.length;
     setCurrentSound(nextSound);
     plays[nextSound]();
+  };
+
+  const handleTitleClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // イベント伝播を止める
+    if (!isClickable) return;
+
+    stops.forEach((stop) => stop());
+    play4();
   };
 
   const handlePlay = () => {
@@ -52,6 +65,12 @@ export default function Home() {
 
   const toggleMute = () => {
     setIsMuted(!isMuted);
+  };
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
@@ -71,7 +90,72 @@ export default function Home() {
       backgroundSize="cover"
       style={{ ...backgroundStyle, ...cursorStyle }}
       onClick={handleScreenClick}
+      position="relative"
     >
+      <VStack
+        position="absolute"
+        top={0}
+        left={0}
+        alignItems="flex-start"
+        m={4}
+      >
+        <Box onClick={handleTitleClick}>
+          <Text
+            fontSize="5xl"
+            fontWeight="extrabold"
+            color="black"
+            onClick={toggleMenu}
+            cursor="pointer"
+            ml={12}
+            mt={10}
+            fontFamily="Zen Kaku Gothic New, sans-serif"
+            className="text-shadow"
+          >
+            水いらず
+          </Text>
+        </Box>
+
+        {isMenuOpen && (
+          <VStack bg="transparent" width="100%" ml={5} spacing={2}>
+            <Text
+              p={4}
+              fontSize="3xl"
+              fontWeight="bold"
+              color="black"
+              className="menu-item"
+            >
+              News
+            </Text>
+            <Text
+              p={4}
+              fontSize="3xl"
+              fontWeight="bold"
+              color="black"
+              className="menu-item"
+            >
+              About
+            </Text>
+            <Text
+              p={4}
+              fontSize="3xl"
+              fontWeight="bold"
+              color="black"
+              className="menu-item"
+            >
+              Discography
+            </Text>
+            <Text
+              p={4}
+              fontSize="3xl"
+              fontWeight="bold"
+              color="black"
+              className="menu-item"
+            >
+              Live
+            </Text>
+          </VStack>
+        )}
+      </VStack>
       {isLoading ? (
         <Spinner size="xl" />
       ) : (

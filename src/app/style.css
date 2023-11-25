@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&family=DotGothic16&family=Shippori+Mincho+B1:wght@800&family=Shizuru&family=Slackside+One&family=Stick&family=Trade+Winds&family=Yusei+Magic&family=Zen+Kaku+Gothic+New:wght@700&display=swap");
+
+.custom-font {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.decorative-text {
+  text-decoration: underline; /* 下線 */
+  font-style: italic; /* イタリック */
+}
+
+/* メニューアイテムアニメーション */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menu-item {
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* ホバーエフェクト */
+.menu-item:hover {
+  color: #e5a734; /* 色変更 */
+  transform: scale(1.05); /* サイズをわずかに拡大 */
+}
+
+.menu-title {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.wave-text {
+  animation: wave 5s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
