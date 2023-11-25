@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Flex } from "@chakra-ui/react";
+import { Button, Flex, Spinner } from "@chakra-ui/react";
 import { useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import { MdOutlinePlayCircle } from "react-icons/md";
@@ -15,15 +15,15 @@ export default function Home() {
   const [backgroundStyle, setBackgroundStyle] = useState({ opacity: 0.3 });
   const [cursorStyle, setCursorStyle] = useState({});
 
-  const [play1, { stop: stop1 }] = useSound(soundFiles[0], {
+  const [play1, { stop: stop1, sound: sound1 }] = useSound(soundFiles[0], {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
-  const [play2, { stop: stop2 }] = useSound(soundFiles[1], {
+  const [play2, { stop: stop2, sound: sound2 }] = useSound(soundFiles[1], {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
-  const [play3, { stop: stop3 }] = useSound(soundFiles[2], {
+  const [play3, { stop: stop3, sound: sound3 }] = useSound(soundFiles[2], {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
@@ -52,6 +52,9 @@ export default function Home() {
     setIsMuted(!isMuted);
   };
 
+  const isLoading =
+    sound1 === undefined || sound2 === undefined || sound3 === undefined;
+
   return (
     <Flex
       height="100vh"
@@ -64,24 +67,30 @@ export default function Home() {
       style={{ ...backgroundStyle, ...cursorStyle }}
       onClick={handleScreenClick}
     >
-      {showPlayButton && (
-        <Button
-          onClick={handlePlay}
-          leftIcon={<MdOutlinePlayCircle size={130} />}
-          bg={"transparent"}
-          _hover={{ color: "#FFFFFF", bg: "transparent" }}
-        ></Button>
-      )}
-      {!showPlayButton && (
-        <Button
-          onClick={toggleMute}
-          m={2}
-          leftIcon={
-            isMuted ? <FaVolumeUp size={50} /> : <FaVolumeMute size={50} />
-          }
-          bg={"transparent"}
-          _hover={{ bg: "transparent" }}
-        ></Button>
+      {isLoading ? (
+        <Spinner size="xl" />
+      ) : (
+        <>
+          {showPlayButton && (
+            <Button
+              onClick={handlePlay}
+              leftIcon={<MdOutlinePlayCircle size={130} />}
+              bg={"transparent"}
+              _hover={{ color: "#FFFFFF", bg: "transparent" }}
+            ></Button>
+          )}
+          {!showPlayButton && (
+            <Button
+              onClick={toggleMute}
+              m={2}
+              leftIcon={
+                isMuted ? <FaVolumeUp size={50} /> : <FaVolumeMute size={50} />
+              }
+              bg={"transparent"}
+              _hover={{ bg: "transparent" }}
+            ></Button>
+          )}
+        </>
       )}
     </Flex>
   );
