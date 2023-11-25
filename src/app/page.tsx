@@ -31,6 +31,7 @@ export default function Home() {
 
   const plays = [play1, play2, play3];
   const stops = [stop1, stop2, stop3];
+  const sounds = [sound1, sound2, sound3];
 
   const handleScreenClick = () => {
     if (!isClickable) return;
@@ -54,12 +55,10 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (sound1 === undefined || sound2 === undefined || sound3 === undefined) {
-      setIsLoading(true);
-    } else {
+    if (sounds) {
       setIsLoading(false);
     }
-  }, [sound1, sound2, sound3]);
+  }, [sounds]);
 
   return (
     <Flex
