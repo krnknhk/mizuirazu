@@ -25,20 +25,20 @@ export default function Discography() {
     <Flex
       direction="column"
       background="linear-gradient(to bottom, #582fb7 30%, #dce0f2 30%, #e8e8e8)"
-      overflow="hidden"
-      maxH={"100%"}
+      minH="100vh"
+      minW="100vw"
     >
-      <VStack position="absolute" alignItems="flex-start" m={4}>
+      <VStack position="absolute" alignItems="flex-start" m={3}>
         <Text
           fontSize="4xl"
-          fontWeight="extrabold"
           color="#e8e8e8"
           cursor="pointer"
+          fontFamily="Zen Kaku Gothic New, sans-serif"
+          textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
+          className="shake-on-hover"
           ml={68}
           mt={10}
-          fontFamily="Zen Kaku Gothic New, sans-serif"
           onClick={toggleMenu}
-          textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
         >
           水いらず
         </Text>
@@ -95,7 +95,7 @@ export default function Discography() {
                 _hover={{ color: "#e5a734" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
-                Videos
+                Movie
               </Text>
             </Link>
             <Link href="https://mizuirazuband.stores.jp/">
@@ -127,11 +127,9 @@ export default function Discography() {
       <VStack mt={150}>
         <Grid
           templateColumns="repeat(8, 1fr)"
-          gap={10}
-          p={10}
-          width="80%"
-          height="40vh"
-          justifyContent="center"
+          gap={70}
+          width="65%"
+          height="27vh"
           cursor="pointer"
         >
           <Box
@@ -141,6 +139,7 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
 
           <Box
@@ -150,6 +149,7 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
 
           <Box
@@ -159,6 +159,7 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
           <Box
             gridColumn="7 / span 2"
@@ -167,16 +168,16 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
         </Grid>
         <Grid
           templateColumns="repeat(8, 1fr)"
-          gap={10}
-          p={10}
-          width="80%"
-          height="40vh"
-          justifyContent="center"
+          gap={70}
+          width="65%"
+          height="27vh"
           cursor="pointer"
+          mt={50}
         >
           <Box
             gridColumn="1 / span 2"
@@ -185,6 +186,7 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
 
           <Box
@@ -194,6 +196,7 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
 
           <Box
@@ -203,6 +206,7 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
 
           <Box
@@ -212,6 +216,7 @@ export default function Discography() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            className="shake-on-hover"
           ></Box>
         </Grid>
       </VStack>

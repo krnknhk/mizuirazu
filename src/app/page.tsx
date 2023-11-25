@@ -111,14 +111,14 @@ export default function Home() {
         <Box onClick={handleTitleClick}>
           <Text
             fontSize="5xl"
-            fontWeight="extrabold"
             color="black"
-            onClick={toggleMenu}
-            cursor="pointer"
-            ml={12}
-            mt={10}
             fontFamily="Zen Kaku Gothic New, sans-serif"
             textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
+            className="shake-on-hover"
+            cursor="pointer"
+            onClick={toggleMenu}
+            ml={12}
+            mt={10}
           >
             水いらず
           </Text>
@@ -176,7 +176,7 @@ export default function Home() {
                 _hover={{ color: "#e5a734" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
-                Videos
+                Movie
               </Text>
             </Link>
             <Link href="https://mizuirazuband.stores.jp/">

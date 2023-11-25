@@ -26,18 +26,19 @@ export default function About() {
     <Flex
       direction="column"
       background="linear-gradient(to bottom, #582fb7 30%, #dce0f2 30%, #e8e8e8)"
-      overflow="hidden"
+      minH="100vh"
+      minW="100vw"
     >
-      <VStack position="absolute" alignItems="flex-start" m={4} zIndex={10}>
+      <VStack position="absolute" alignItems="flex-start" m={3}>
         <Text
           fontSize="4xl"
-          fontWeight="extrabold"
           color="#e8e8e8"
           cursor="pointer"
-          ml={68}
-          mt={10}
           fontFamily="Zen Kaku Gothic New, sans-serif"
           textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
+          className="shake-on-hover"
+          ml={68}
+          mt={10}
           onClick={toggleMenu}
         >
           水いらず
@@ -95,7 +96,7 @@ export default function About() {
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                 _hover={{ color: "#e5a734" }}
               >
-                Videos
+                Movie
               </Text>
             </Link>
             <Link href="https://mizuirazuband.stores.jp/">
