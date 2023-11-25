@@ -54,10 +54,11 @@ export default function Home() {
   };
 
   useEffect(() => {
-    sound1 === undefined || sound2 === undefined || sound3 === undefined;
-    setIsLoading(true);
-    sound1 && sound2 && sound3;
-    setIsLoading(false);
+    if (sound1 === undefined || sound2 === undefined || sound3 === undefined) {
+      setIsLoading(true);
+    } else {
+      setIsLoading(false);
+    }
   }, [sound1, sound2, sound3]);
 
   return (
