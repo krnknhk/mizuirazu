@@ -1,31 +1,30 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const mediaQuery = {
-  sp: "width < 1024px",
-  pc: "1024px <= width",
+  sp: "(width < 1024px)",
+  pc: "(1024px <= width)",
 };
 
 export const useMediaQuery = (query: string) => {
-  const formattedQuery = `(${query})`;
-  let match = matchMedia(formattedQuery).matches;
+  const [match, setMatch] = useState(false);
 
   useEffect(() => {
-    const mql = matchMedia(formattedQuery);
+    if (typeof window !== "undefined") {
+      const mql = window.matchMedia(query);
 
-    if (mql.media === "not all" || mql.media === "invalid") {
-      console.error(`useMediaQuery Error: Invalid media query`);
+      setMatch(mql.matches);
+
+      const handleChange = (e: MediaQueryListEvent) => {
+        setMatch(e.matches);
+      };
+
+      mql.onchange = handleChange;
+
+      return () => {
+        mql.onchange = null;
+      };
     }
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      match = e.matches;
-    };
-
-    mql.onchange = handleChange;
-
-    return () => {
-      mql.onchange = null;
-    };
-  }, [formattedQuery]);
+  }, [query]);
 
   return match;
 };
