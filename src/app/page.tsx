@@ -10,6 +10,8 @@ import "./style.css";
 export default function Home() {
   const soundFiles = ["/uturu_edit.mp3", "/sumu_edit.mp3", "/bakeru_edit.mp3"];
   const [currentSound, setCurrentSound] = useState(0);
+  const [currentJpg, setCurrentJpg] = useState(0);
+  const [currentBackground, setCurrentBackground] = useState("/20210828_9.jpg");
   const [isClickable, setIsClickable] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true);
@@ -36,6 +38,7 @@ export default function Home() {
   const plays = [play1, play2, play3];
   const stops = [stop1, stop2, stop3, stop4];
   const sounds = [sound1, sound2, sound3, sound4];
+  const jpgFiles = ["/20210828_1.jpg", "/20210828_26.jpg", "/20210828_9.jpg"];
 
   const handleScreenClick = () => {
     if (!isClickable) return;
@@ -43,6 +46,9 @@ export default function Home() {
     stops.forEach((stop) => stop());
     const nextSound = (currentSound + 1) % soundFiles.length;
     setCurrentSound(nextSound);
+    const nextJpg = (currentJpg + 1) % jpgFiles.length;
+    setCurrentJpg(nextJpg);
+    setCurrentBackground(jpgFiles[currentJpg]);
     plays[nextSound]();
   };
 
@@ -52,6 +58,7 @@ export default function Home() {
 
     stops.forEach((stop) => stop());
     play4();
+    setCurrentBackground("/20210828_50.jpg");
   };
 
   const handleMenuClick = (e: React.MouseEvent) => {
@@ -68,7 +75,8 @@ export default function Home() {
     setCursorStyle({ cursor: "pointer" });
   };
 
-  const toggleMute = () => {
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation(); // イベント伝播を止める
     setIsMuted(!isMuted);
   };
 
@@ -89,7 +97,7 @@ export default function Home() {
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      backgroundImage="url('/20210828_9.jpg')"
+      backgroundImage={currentBackground}
       height="100vh"
       overflow={"hidden"}
       style={cursorStyle}
