@@ -38,7 +38,7 @@ export default function Home() {
   const plays = [play1, play2, play3];
   const stops = [stop1, stop2, stop3, stop4];
   const sounds = [sound1, sound2, sound3, sound4];
-  const jpgFiles = ["/20210828_1.jpg", "/20210828_26.jpg", "/20210828_9.jpg"];
+  const jpgFiles = ["/20210828_1.jpg", "/20210828_26.jpg", "/20210828_6.jpg"];
 
   const handleScreenClick = () => {
     if (!isClickable) return;
@@ -72,6 +72,7 @@ export default function Home() {
     setShowPlayButton(false);
     setIsClickable(true);
     plays[currentSound]();
+    setCurrentBackground("/20210828_6.jpg");
     setCursorStyle({ cursor: "pointer" });
   };
 
