@@ -4,7 +4,6 @@ import { Box, Button, Flex, Spinner, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
-import { MdOutlinePlayCircle } from "react-icons/md";
 import useSound from "use-sound";
 import "./style.css";
 
@@ -171,10 +170,10 @@ export default function Home() {
           <>
             {showPlayButton && (
               <Button
-                onClick={handlePlay}
-                leftIcon={<MdOutlinePlayCircle size={130} />}
+                leftIcon={<FaVolumeUp size={100} />}
                 bg={"transparent"}
                 _hover={{ color: "#e88700", bg: "transparent" }}
+                onClick={handlePlay}
               ></Button>
             )}
             {!showPlayButton && (
@@ -189,7 +188,7 @@ export default function Home() {
                   )
                 }
                 bg={"transparent"}
-                _hover={{ bg: "transparent" }}
+                _hover={{ color: "#e88700", bg: "transparent" }}
               ></Button>
             )}
           </>
