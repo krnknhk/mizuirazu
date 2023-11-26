@@ -5,9 +5,9 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Center,
   Flex,
   Grid,
+  GridItem,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -101,76 +101,59 @@ export default function About() {
           </Breadcrumb>
           <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
         </Box>
-        <Flex
-          width="100%"
-          height="50vh"
-          alignItems="flex-end"
-          justifyContent="space-around"
-          px={10}
-          mb={35}
-        >
-          <Box
-            width="52%"
-            height="75%"
-            backgroundImage="url('/20210828_6.jpg')"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            position="relative"
-            boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-          ></Box>
-
-          <Box
-            width="43%"
-            height="40%"
-            backgroundColor="#efedf7"
-            boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
-            overflowY="auto"
-            p={8}
-          >
-            <Text fontSize="md" color="black" fontWeight="bold">
-              2016年に結成された東京を拠点に活動する4人組インディ・ロック・バンド。アジアの民族音楽をもとに、スタンドアローン・コンプレックス(孤立した個人でありながらも、全体として集団的な行動を取る)なスタンスを心がけながら、独自の音楽を生み出す。メンバーは楽器よりもPCを愛用している。バンドは直接民主制を採用し、メンバー同士の仲は非常に良く、喧嘩は皆無。家が近いため、タクシー代が割り勘できる。思想や概念から作曲が始まり、家で楽曲制作を行なっている。
-            </Text>
-            <Box mt={7}>
-              <Text fontSize="md" color="black" as="i">
-                井上真 (vo,gt)、小宮山節己 (dr)、桜井晴紀 (key)、辻本秀太郎 (ba)
-              </Text>
-            </Box>
-          </Box>
-        </Flex>
-        <Center>
+        <VStack mt={50}>
           <Grid
             templateColumns="repeat(12, 1fr)"
             gap={10}
-            p={10}
             width="90%"
-            height="160vh"
+            height="43vh"
             justifyContent="center"
           >
-            <Box
-              gridColumn="1 / span 7"
-              gridRow="1 / span 4"
-              backgroundImage="url('/IMG_8393.JPG')"
+            <GridItem
+              colSpan={5}
+              backgroundImage="url('/20210828_6.jpg')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
               boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-            ></Box>
+            ></GridItem>
 
-            <Box
-              gridColumn="8 / span 5"
-              gridRow="1 / span 4"
-              backgroundImage="url('/IMG_8394.JPG')"
-              backgroundRepeat="no-repeat"
-              backgroundSize="cover"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-            ></Box>
-
-            <Box
-              gridColumn="1 / span 6"
-              gridRow="5 / span 2"
-              backgroundColor="#efedf7"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            <GridItem
+              colSpan={7}
+              backgroundColor="#efe9e6"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.3)"
+              overflowY="auto"
+              rounded="md"
               p={8}
+            >
+              <VStack align="stretch">
+                <Text fontSize="md" color="black" fontWeight="bold">
+                  2016年に結成された東京を拠点に活動する4人組インディ・ロック・バンド。アジアの民族音楽をもとに、スタンドアローン・コンプレックス(孤立した個人でありながらも、全体として集団的な行動を取る)なスタンスを心がけながら、独自の音楽を生み出す。メンバーは楽器よりもPCを愛用している。バンドは直接民主制を採用し、メンバー同士の仲は非常に良く、喧嘩は皆無。家が近いため、タクシー代が割り勘できる。思想や概念から作曲が始まり、家で楽曲制作を行なっている。
+                </Text>
+                <Box mt={5}>
+                  <Text fontSize="sm" color="black" fontWeight="bold" as="i">
+                    井上真 (vo,gt)、小宮山節己 (dr)、桜井晴紀 (key)、辻本秀太郎
+                    (ba)
+                  </Text>
+                </Box>
+              </VStack>
+            </GridItem>
+          </Grid>
+
+          <Grid
+            templateColumns="repeat(12, 1fr)"
+            gap={5}
+            width="90%"
+            height="45vh"
+            justifyContent="center"
+            mt={35}
+          >
+            <GridItem
+              colSpan={7}
+              backgroundColor="#efe9e6"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+              overflowY="auto"
+              rounded="md"
+              p={5}
             >
               <Text fontSize="md" color="black" fontWeight="bold">
                 2020 年 12
@@ -179,56 +162,80 @@ export default function About() {
                 LIVE HAUS
                 にて、Lanes、テンテンコを共演に迎えリリース・イベント『intimacy』を開催。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={1}>
+              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
                 2021 年 10
                 月:「su-mu」を配信リリース。アジアの民族音楽に着眼し、ケチャ、ガムラン、日本民謡、コナッコルなど、アジア的なリズムや音階をバンド・サウンドに還元する取り組みが話題を集める。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={1}>
+              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
                 2022 年 2
                 月:「su-mu」リリース・イベントをプラネタリウムで開催。あだち麗三郎、Pot-pourri
                 と共演。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={1}>
+              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
                 2022 年 10 月:「su-mu」の 7
                 インチ・レコードがリリース。曽我部恵一(サニーデイ・サービス)が手がけたリミックスも収録された。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={1}>
+              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
                 2022 年 10
                 月:妖怪、インセル、都市がテーマとなったシングル「bakeru」を配信リリース。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={1}>
+              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
                 2022 年 11 月:下北沢 THREE
                 で企画ライブ「intimacy」を開催。ゲストに浮を迎え、音楽
                 ZINE『痙攣』の編集長・李氏とのトークショー も行なわれた。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={1}>
+              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
                 2023 年 5 月:奇妙礼太郎との 2 マンライヴを渋谷 La.mama
                 で行なう。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={1}>
+              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
                 2023 年 12 月:シングル「uturu」をリリース。
               </Text>
-            </Box>
+            </GridItem>
 
-            <Box
-              gridColumn="7 / span 6"
-              gridRow="5 / span 2"
+            <GridItem
+              colSpan={5}
+              backgroundImage="url('/IMG_8394.JPG')"
+              backgroundRepeat="no-repeat"
+              backgroundSize="cover"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            ></GridItem>
+          </Grid>
+
+          <Grid
+            templateColumns="repeat(12, 1fr)"
+            gap={5}
+            width="90%"
+            height="35vh"
+            justifyContent="center"
+            mb={35}
+            mt={35}
+          >
+            <GridItem
+              colSpan={5}
+              backgroundImage="url('/IMG_8393.JPG')"
+              backgroundRepeat="no-repeat"
+              backgroundSize="cover"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+            ></GridItem>
+
+            <GridItem
+              colSpan={3}
               backgroundImage="url('/IMG_8396.JPG')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
               boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-            ></Box>
+            ></GridItem>
 
-            <Box
-              gridColumn="1 / span 8"
-              gridRow="7 / span 5"
+            <GridItem
+              colSpan={4}
               backgroundImage="url('/IMG_8395.JPG')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
               boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-            ></Box>
+            ></GridItem>
           </Grid>
-        </Center>
+        </VStack>
       </Flex>
     );
   }
