@@ -114,13 +114,12 @@ export default function About() {
               backgroundImage="url('/20210828_6.jpg')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
             ></GridItem>
 
             <GridItem
               colSpan={7}
-              backgroundColor="#efe9e6"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.3)"
+              backgroundColor="#f4f4ed"
               overflowY="auto"
               rounded="md"
               p={8}
@@ -149,8 +148,7 @@ export default function About() {
           >
             <GridItem
               colSpan={7}
-              backgroundColor="#efe9e6"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+              backgroundColor="#f4f4ed"
               overflowY="auto"
               rounded="md"
               p={5}
@@ -198,13 +196,13 @@ export default function About() {
               backgroundImage="url('/IMG_8394.JPG')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
             ></GridItem>
           </Grid>
 
           <Grid
             templateColumns="repeat(12, 1fr)"
-            gap={5}
+            gap={8}
             width="90%"
             height="35vh"
             justifyContent="center"
@@ -216,7 +214,7 @@ export default function About() {
               backgroundImage="url('/IMG_8393.JPG')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
             ></GridItem>
 
             <GridItem
@@ -224,7 +222,7 @@ export default function About() {
               backgroundImage="url('/IMG_8396.JPG')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
             ></GridItem>
 
             <GridItem
@@ -232,7 +230,7 @@ export default function About() {
               backgroundImage="url('/IMG_8395.JPG')"
               backgroundRepeat="no-repeat"
               backgroundSize="cover"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
             ></GridItem>
           </Grid>
         </VStack>
