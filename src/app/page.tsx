@@ -88,6 +88,17 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const preloadImages = () => {
+      jpgFiles.forEach((imageUrl) => {
+        const img = new Image();
+        img.src = imageUrl;
+      });
+    };
+
+    preloadImages();
+  }, []);
+
+  useEffect(() => {
     if (sounds) {
       setIsLoading(false);
     }
