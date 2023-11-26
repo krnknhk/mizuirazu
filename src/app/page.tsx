@@ -88,8 +88,15 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const preJpgFiles = [
+      "/20210828_1.jpg",
+      "/20210828_9.jpg",
+      "/20210828_26.jpg",
+      "/20210828_50.jpg",
+    ];
+
     const preloadImages = () => {
-      jpgFiles.forEach((imageUrl) => {
+      preJpgFiles.forEach((imageUrl) => {
         const img = new Image();
         img.src = imageUrl;
       });
