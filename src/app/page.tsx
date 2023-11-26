@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Button, Flex, Spinner, Text, VStack } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
@@ -92,14 +93,11 @@ export default function Home() {
       height="100vh"
       alignItems="center"
       justifyContent="center"
-      backgroundImage="url('/20210828_9.jpg')"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      backgroundSize="cover"
+      position="relative"
       style={{ ...backgroundStyle, ...cursorStyle }}
       onClick={handleScreenClick}
-      position="relative"
     >
+      <Image src="/20210828_9.jpg" fill alt="水いらずのトップページの背景" />
       <VStack
         position="absolute"
         top={0}
