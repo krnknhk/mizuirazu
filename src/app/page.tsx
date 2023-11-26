@@ -15,7 +15,6 @@ export default function Home() {
   const [isClickable, setIsClickable] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true);
-  const [backgroundStyle, setBackgroundStyle] = useState({ opacity: 0.3 });
   const [cursorStyle, setCursorStyle] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
@@ -68,7 +67,6 @@ export default function Home() {
     setShowPlayButton(false);
     setIsClickable(true);
     plays[currentSound]();
-    setBackgroundStyle({ opacity: 1 });
     setCursorStyle({ cursor: "pointer" });
   };
 
@@ -94,7 +92,7 @@ export default function Home() {
       alignItems="center"
       justifyContent="center"
       position="relative"
-      style={{ ...backgroundStyle, ...cursorStyle }}
+      style={cursorStyle}
       onClick={handleScreenClick}
     >
       <Image src="/20210828_9.jpg" fill alt="水いらずのトップページの背景" />

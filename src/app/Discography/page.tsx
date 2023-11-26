@@ -28,10 +28,9 @@ export default function Discography() {
       minH="100vh"
       minW="100vw"
     >
-      <VStack position="absolute" alignItems="flex-start" m={3}>
+      <VStack position="absolute" alignItems="flex-start" m={3} color="#e8e8e8">
         <Text
           fontSize="4xl"
-          color="#e8e8e8"
           cursor="pointer"
           fontFamily="Zen Kaku Gothic New, sans-serif"
           textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
@@ -113,7 +112,7 @@ export default function Discography() {
           </VStack>
         )}
       </VStack>
-      <Box ml={300} mt={55}>
+      <Box ml={300} mt={55} color="#e8e8e8">
         <Breadcrumb>
           <BreadcrumbItem>
             <BreadcrumbLink href="/" _hover={{ color: "#e88700" }}>
