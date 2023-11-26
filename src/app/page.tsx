@@ -1,7 +1,6 @@
 "use client";
 
 import { Box, Button, Flex, Spinner, Text, VStack } from "@chakra-ui/react";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
@@ -87,134 +86,115 @@ export default function Home() {
   }, [sounds]);
 
   return (
-    <Flex
+    <Box
+      backgroundSize="cover"
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
+      backgroundImage="url('/20210828_9.jpg')"
       height="100vh"
-      alignItems="center"
-      justifyContent="center"
-      position="relative"
+      overflow={"hidden"}
       style={cursorStyle}
       onClick={handleScreenClick}
     >
-      <Image src="/20210828_9.jpg" fill alt="水いらずのトップページの背景" />
-      <VStack
-        position="absolute"
-        top={0}
-        left={0}
-        alignItems="flex-start"
-        m={4}
-        zIndex={10}
-      >
-        <Box onClick={handleTitleClick}>
-          <Text
-            fontSize="5xl"
-            color="black"
-            fontFamily="Zen Kaku Gothic New, sans-serif"
-            textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
-            className="shake-on-hover"
-            cursor="pointer"
-            onClick={toggleMenu}
-            ml={12}
-            mt={10}
-          >
-            水いらず
-          </Text>
-        </Box>
-
-        {isMenuOpen && (
-          <VStack
-            bg="transparent"
-            width="100%"
-            ml={5}
-            spacing={2}
-            onClick={handleMenuClick}
-            className="menu-item"
-          >
-            <Link href="/About">
-              <Text
-                p={4}
-                fontSize="3xl"
-                fontWeight="bold"
-                color="black"
-                _hover={{ color: "#e88700" }}
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-              >
-                About
-              </Text>
-            </Link>
-            <Link href="/Discography">
-              <Text
-                p={4}
-                fontSize="3xl"
-                fontWeight="bold"
-                color="black"
-                _hover={{ color: "#e88700" }}
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-              >
-                Discography
-              </Text>
-            </Link>
+      <Box maxH="100vh" position="absolute">
+        <VStack position="relative" top={30} left={50}>
+          <Box onClick={handleTitleClick}>
             <Text
-              p={4}
-              fontSize="3xl"
+              fontSize="4xl"
+              color="black"
+              fontFamily="Zen Kaku Gothic New, sans-serif"
+              textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
+              className="shake-on-hover"
+              cursor="pointer"
+              onClick={toggleMenu}
+              mb={3}
+            >
+              水いらず
+            </Text>
+          </Box>
+          {isMenuOpen && (
+            <VStack
+              bg="transparent"
+              fontSize="2xl"
               fontWeight="bold"
               color="black"
-              _hover={{ color: "#e88700" }}
-              textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+              spacing={7}
+              onClick={handleMenuClick}
+              className="menu-item"
             >
-              Live
-            </Text>
-            <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
+              <Link href="/About">
+                <Text
+                  _hover={{ color: "#e88700" }}
+                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+                >
+                  About
+                </Text>
+              </Link>
+              <Link href="/Discography">
+                <Text
+                  _hover={{ color: "#e88700" }}
+                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+                >
+                  Discography
+                </Text>
+              </Link>
               <Text
-                p={4}
-                fontSize="3xl"
-                fontWeight="bold"
-                color="black"
                 _hover={{ color: "#e88700" }}
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
               >
-                Movie
+                Live
               </Text>
-            </Link>
-            <Link href="https://mizuirazuband.stores.jp/">
-              <Text
-                p={4}
-                fontSize="3xl"
-                fontWeight="bold"
-                color="black"
-                _hover={{ color: "#e88700" }}
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-              >
-                Store
-              </Text>
-            </Link>
-          </VStack>
+              <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
+                <Text
+                  _hover={{ color: "#e88700" }}
+                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+                >
+                  Movie
+                </Text>
+              </Link>
+              <Link href="https://mizuirazuband.stores.jp/">
+                <Text
+                  _hover={{ color: "#e88700" }}
+                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+                >
+                  Store
+                </Text>
+              </Link>
+            </VStack>
+          )}
+        </VStack>
+      </Box>
+      <Flex justifyContent="center" alignItems="center" height="100vh">
+        {isLoading ? (
+          <Spinner size="xl" />
+        ) : (
+          <>
+            {showPlayButton && (
+              <Button
+                onClick={handlePlay}
+                leftIcon={<MdOutlinePlayCircle size={130} />}
+                bg={"transparent"}
+                _hover={{ color: "#e88700", bg: "transparent" }}
+              ></Button>
+            )}
+            {!showPlayButton && (
+              <Button
+                onClick={toggleMute}
+                m={2}
+                leftIcon={
+                  isMuted ? (
+                    <FaVolumeUp size={50} />
+                  ) : (
+                    <FaVolumeMute size={50} />
+                  )
+                }
+                bg={"transparent"}
+                _hover={{ bg: "transparent" }}
+              ></Button>
+            )}
+          </>
         )}
-      </VStack>
-      {isLoading ? (
-        <Spinner size="xl" />
-      ) : (
-        <>
-          {showPlayButton && (
-            <Button
-              onClick={handlePlay}
-              leftIcon={<MdOutlinePlayCircle size={130} />}
-              bg={"transparent"}
-              _hover={{ color: "#e88700", bg: "transparent" }}
-            ></Button>
-          )}
-          {!showPlayButton && (
-            <Button
-              onClick={toggleMute}
-              m={2}
-              leftIcon={
-                isMuted ? <FaVolumeUp size={50} /> : <FaVolumeMute size={50} />
-              }
-              bg={"transparent"}
-              _hover={{ bg: "transparent" }}
-            ></Button>
-          )}
-        </>
-      )}
-    </Flex>
+      </Flex>
+    </Box>
   );
 }

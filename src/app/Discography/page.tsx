@@ -125,10 +125,10 @@ export default function Discography() {
         </Breadcrumb>
         <Box height="1px" backgroundColor="gray.200" width="90%" mt={5} />
       </Box>
-      <VStack mt={150}>
+      <VStack mt={70} position={"relative"}>
         <Grid
           templateColumns="repeat(8, 1fr)"
-          gap={70}
+          gap={30}
           width="65%"
           height="27vh"
           cursor="pointer"
@@ -141,6 +141,7 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
 
           <Box
@@ -151,6 +152,7 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
 
           <Box
@@ -161,6 +163,7 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
           <Box
             gridColumn="7 / span 2"
@@ -170,15 +173,18 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
         </Grid>
+      </VStack>
+      <VStack mt={21}>
         <Grid
           templateColumns="repeat(8, 1fr)"
-          gap={70}
+          gap={30}
           width="65%"
           height="27vh"
           cursor="pointer"
-          mt={50}
+          mt={30}
         >
           <Box
             gridColumn="1 / span 2"
@@ -188,6 +194,7 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
 
           <Box
@@ -198,6 +205,7 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
 
           <Box
@@ -208,6 +216,7 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
 
           <Box
@@ -218,6 +227,7 @@ export default function Discography() {
             backgroundSize="cover"
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
+            aspectRatio={1 / 1}
           ></Box>
         </Grid>
       </VStack>
