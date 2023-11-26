@@ -33,22 +33,22 @@ export default function About() {
         direction="column"
         background="linear-gradient(to bottom, #582fb7 23%, #dce0f2 23%, #e8e8e8)"
         minH="100vh"
-        minW="100vw"
       >
         <VStack
           position="absolute"
           alignItems="flex-start"
-          color="#e8e8e8"
           m={3}
+          color="#e8e8e8"
         >
           <Text
-            fontSize="4xl"
+            fontSize="3xl"
             cursor="pointer"
             fontFamily="Zen Kaku Gothic New, sans-serif"
             textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
             className="shake-on-hover"
             ml={68}
-            mt={10}
+            mt={8}
+            mb={3}
             onClick={toggleMenu}
           >
             水いらず
@@ -56,70 +56,34 @@ export default function About() {
 
           {isMenuOpen && (
             <VStack
-              bg="transparent"
               width="10%"
-              ml={125}
-              spacing={2}
+              color="e8e8e8"
+              bg="transparent"
+              fontSize="2xl"
+              fontWeight="bold"
+              textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+              ml={115}
+              spacing={7}
               zIndex={10}
               className="menu-item"
             >
               <Link href="/">
-                <Text
-                  p={4}
-                  fontSize="3xl"
-                  fontWeight="bold"
-                  color="e8e8e8"
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                  _hover={{ color: "#e88700" }}
-                >
-                  Home
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>Home</Text>
               </Link>
               <Link href="/Discography">
                 <Text
-                  p={4}
-                  fontSize="3xl"
-                  fontWeight="bold"
-                  color="e8e8e8"
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                   _hover={{ color: "#e88700" }}
+                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                 >
                   Discography
                 </Text>
               </Link>
-              <Text
-                p={4}
-                fontSize="3xl"
-                fontWeight="bold"
-                color="e8e8e8"
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                _hover={{ color: "#e88700" }}
-              >
-                Live
-              </Text>
+              <Text _hover={{ color: "#e88700" }}>Live</Text>
               <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
-                <Text
-                  p={4}
-                  fontSize="3xl"
-                  fontWeight="bold"
-                  color="e8e8e8"
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                  _hover={{ color: "#e88700" }}
-                >
-                  Movie
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>Movie</Text>
               </Link>
               <Link href="https://mizuirazuband.stores.jp/">
-                <Text
-                  p={4}
-                  fontSize="3xl"
-                  fontWeight="bold"
-                  color="e8e8e8"
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                  _hover={{ color: "#e88700" }}
-                >
-                  Store
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>Store</Text>
               </Link>
             </VStack>
           )}
@@ -135,7 +99,7 @@ export default function About() {
               <BreadcrumbLink href="#">About</BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
-          <Box height="1px" backgroundColor="gray.200" width="90%" mt={5} />
+          <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
         </Box>
         <Flex
           width="100%"
