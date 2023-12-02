@@ -1,3 +1,4 @@
+/* eslint no-irregular-whitespace: "off" */
 "use client";
 
 import {
@@ -10,6 +11,8 @@ import {
   Flex,
   Grid,
   GridItem,
+  HStack,
+  Spacer,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -113,27 +116,50 @@ export default function Discography() {
             </GridItem>
 
             <GridItem colSpan={6}>
-              <Text
-                fontSize="40px"
-                fontWeight="bold"
-                fontFamily="english"
-                as="i"
-              >
-                『uturu』
+              <Text fontSize="30px" fontWeight="bold" fontFamily="english">
+                uturu
               </Text>
               <Box mt={2}>
-                <Text fontSize="20px" fontFamily="english">
+                <Text fontSize="16px" fontFamily="english">
                   Digital Single - 2023.12.6
                 </Text>
               </Box>
-              <Box mt={5}>
-                <Text fontSize="23px" fontWeight="bold" fontFamily="english">
-                  1. uturu
+              <Box mt={7}>
+                <Text fontSize="16px" fontFamily="english" color={"#55499b"}>
+                  TRACKLISTING
                 </Text>
               </Box>
+              <Box
+                height="1px"
+                backgroundColor="gray.300"
+                width="100%"
+                mt={3}
+              />
+              <Box mt={1} ml={1}>
+                <HStack>
+                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
+                    1　
+                  </Text>
+                  <Text fontSize="16px" fontWeight="500" fontFamily="english">
+                    uturu
+                  </Text>
+                  <Spacer />
+                  {/* <Link href="https://open.spotify.com/intl-ja/track/1jYHKwsWxnWQnhp9vgpv4p?si=237afaaa5a5a4964">
+                    <Box color="#3bd300">
+                      <FaSpotify size={20} />
+                    </Box>
+                  </Link> */}
+                </HStack>
+              </Box>
+              <Box
+                height="1px"
+                backgroundColor="gray.300"
+                width="100%"
+                mt={1}
+              />
               <Box mt={20}>
                 <Text
-                  fontSize="18px"
+                  fontSize="16px"
                   fontWeight="bold"
                   fontFamily="english"
                   as="u"
@@ -142,23 +168,23 @@ export default function Discography() {
                 </Text>
               </Box>
               <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                <Text fontSize="14px" fontWeight="bold" fontFamily="japanese">
                   米山ミサ(浮/ vo)
                 </Text>
               </Box>
               <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                <Text fontSize="14px" fontWeight="bold" fontFamily="japanese">
                   マーティ・ホロベック(bass solo)
                 </Text>
               </Box>
               <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                <Text fontSize="14px" fontWeight="bold" fontFamily="japanese">
                   下田開登(ex picnic you、跡地/rap)
                 </Text>
               </Box>
-              <Box mt={10}>
+              <Box mt={5}>
                 <Text
-                  fontSize="18px"
+                  fontSize="16px"
                   fontWeight="bold"
                   fontFamily="english"
                   as="u"
@@ -167,17 +193,17 @@ export default function Discography() {
                 </Text>
               </Box>
               <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                <Text fontSize="14px" fontWeight="bold" fontFamily="japanese">
                   米津裕二郎(Recording, Mix and Mastering)
                 </Text>
               </Box>
               <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                <Text fontSize="14px" fontWeight="bold" fontFamily="japanese">
                   Recorded at Sound-m Studio(WAREHOUSE TRACKS)
                 </Text>
               </Box>
               <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                <Text fontSize="14px" fontWeight="bold" fontFamily="japanese">
                   Mixed at STUDIO TORCH
                 </Text>
               </Box>

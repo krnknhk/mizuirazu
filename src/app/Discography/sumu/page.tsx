@@ -1,4 +1,3 @@
-/* eslint no-irregular-whitespace: "off" */
 "use client";
 
 import {
@@ -11,14 +10,11 @@ import {
   Flex,
   Grid,
   GridItem,
-  HStack,
-  Spacer,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useState } from "react";
-import { FaSpotify } from "react-icons/fa";
 import "../../style.css";
 
 export default function Discography() {
@@ -117,71 +113,38 @@ export default function Discography() {
             </GridItem>
 
             <GridItem colSpan={6}>
-              <Text fontSize="30px" fontWeight="bold" fontFamily="english">
-                bakeru
+              <Text
+                fontSize="40px"
+                fontWeight="bold"
+                fontFamily="english"
+                as="i"
+              >
+                『bakeru』
               </Text>
               <Box mt={2}>
-                <Text fontSize="16px" fontFamily="english">
+                <Text fontSize="20px" fontFamily="english">
                   Digital Single - 2022.10.22
                 </Text>
               </Box>
-              <Box mt={7}>
-                <Text fontSize="16px" fontFamily="english" color={"#55499b"}>
-                  TRACKLISTING
+              <Box mt={5}>
+                <Text fontSize="23px" fontWeight="bold" fontFamily="english">
+                  1. bakeru and enjiru
+                </Text>
+                <Text fontSize="23px" fontWeight="bold" fontFamily="english">
+                  2. bakeru
                 </Text>
               </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={3}
-              />
-              <Box mt={1} ml={1}>
-                <HStack>
-                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
-                    1　
-                  </Text>
-                  <Text fontSize="16px" fontWeight="500" fontFamily="english">
-                    bakeru and enjiru
-                  </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/1jYHKwsWxnWQnhp9vgpv4p?si=237afaaa5a5a4964">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
-                </HStack>
-              </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={1}
-              />
-              <Box mt={1} ml={1}>
-                <HStack>
-                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
-                    2　
-                  </Text>
-                  <Text fontSize="16px" fontWeight="500" fontFamily="english">
-                    bakeru
-                  </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/4pXgB3pcdDFLrUx80prb2m?si=df53d19743c143b4">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
-                </HStack>
-              </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={1}
-              />
             </GridItem>
           </Grid>
+          <Box p={10}>
+            <iframe
+              src="https://open.spotify.com/embed/track/4pXgB3pcdDFLrUx80prb2m?utm_source=generator"
+              width="70%"
+              height="250"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </Box>
         </Box>
       </Center>
     </Flex>

@@ -123,7 +123,7 @@ export default function About() {
               p={8}
             >
               <VStack align="stretch">
-                <Text fontSize="md" color="black" fontWeight="bold">
+                <Text fontSize="15px" color="black" fontWeight="bold">
                   2016年に結成された東京を拠点に活動する4人組インディ・ロック・バンド。アジアの民族音楽をもとに、スタンドアローン・コンプレックス(孤立した個人でありながらも、全体として集団的な行動を取る)なスタンスを心がけながら、独自の音楽を生み出す。メンバーは楽器よりもPCを愛用している。バンドは直接民主制を採用し、メンバー同士の仲は非常に良く、喧嘩は皆無。家が近いため、タクシー代が割り勘できる。思想や概念から作曲が始まり、家で楽曲制作を行なっている。
                 </Text>
                 <Box mt={5}>
@@ -151,40 +151,47 @@ export default function About() {
               rounded="md"
               p={5}
             >
-              <Text fontSize="md" color="black" fontWeight="bold">
+              <Text fontSize="15px" color="black" fontWeight="bold">
                 2020 年 12
                 月:1stフル・アルバム『ほとんど、空』をリリース。巽啓伍(never
                 youngbeach)、東郷清丸、天川悠雅(ギリシャラブ)、飯島はるか(に角すい)が賛辞を送り、多方面から評価を得た。翌年5月に下北沢
                 LIVE HAUS
                 にて、Lanes、テンテンコを共演に迎えリリース・イベント『intimacy』を開催。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
+              <Box height="1px" backgroundColor="gray.300" width="99%" mt={3} />
+              <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
                 2021 年 10
                 月:「su-mu」を配信リリース。アジアの民族音楽に着眼し、ケチャ、ガムラン、日本民謡、コナッコルなど、アジア的なリズムや音階をバンド・サウンドに還元する取り組みが話題を集める。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
+              <Box height="1px" backgroundColor="gray.300" width="99%" mt={3} />
+              <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
                 2022 年 2
                 月:「su-mu」リリース・イベントをプラネタリウムで開催。あだち麗三郎、Pot-pourri
                 と共演。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
+              <Box height="1px" backgroundColor="gray.300" width="99%" mt={3} />
+              <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
                 2022 年 10 月:「su-mu」の 7
                 インチ・レコードがリリース。曽我部恵一(サニーデイ・サービス)が手がけたリミックスも収録された。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
+              <Box height="1px" backgroundColor="gray.300" width="99%" mt={3} />
+              <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
                 2022 年 10
                 月:妖怪、インセル、都市がテーマとなったシングル「bakeru」を配信リリース。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
+              <Box height="1px" backgroundColor="gray.300" width="99%" mt={3} />
+              <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
                 2022 年 11 月:下北沢 THREE
                 で企画ライブ「intimacy」を開催。ゲストに浮を迎え、音楽
                 ZINE『痙攣』の編集長・李氏とのトークショー も行なわれた。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
+              <Box height="1px" backgroundColor="gray.300" width="99%" mt={3} />
+              <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
                 2023 年 5 月:奇妙礼太郎との 2 マンライヴを渋谷 La.mama
                 で行なう。
               </Text>
-              <Text fontSize="md" color="black" fontWeight="bold" mt={3}>
+              <Box height="1px" backgroundColor="gray.300" width="99%" mt={3} />
+              <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
                 2023 年 12 月:シングル「uturu」をリリース。
               </Text>
             </GridItem>
