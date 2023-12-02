@@ -31,7 +31,7 @@ export default function About() {
     return (
       <Flex
         direction="column"
-        background="linear-gradient(to bottom, #582fb7 23%, #dce0f2 23%, #e8e8e8)"
+        background="linear-gradient(to bottom, #55499b 23%, #dce0f2 23%, #e8e8e8)"
         minH="100vh"
       >
         <VStack
@@ -50,6 +50,7 @@ export default function About() {
             mt={8}
             mb={3}
             onClick={toggleMenu}
+            _hover={{ color: "#e88700" }}
           >
             水いらず
           </Text>
@@ -71,12 +72,7 @@ export default function About() {
                 <Text _hover={{ color: "#e88700" }}>Home</Text>
               </Link>
               <Link href="/Discography">
-                <Text
-                  _hover={{ color: "#e88700" }}
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                >
-                  Discography
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>Discography</Text>
               </Link>
               <Text _hover={{ color: "#e88700" }}>Live</Text>
               <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">

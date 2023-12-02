@@ -132,6 +132,7 @@ export default function Home() {
               textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
               className="shake-on-hover"
               cursor="pointer"
+              _hover={{ color: "#e88700" }}
               onClick={toggleMenu}
               mb={3}
             >
@@ -147,44 +148,20 @@ export default function Home() {
               spacing={7}
               onClick={handleMenuClick}
               className="menu-item"
+              textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
             >
               <Link href="/About">
-                <Text
-                  _hover={{ color: "#e88700" }}
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                >
-                  About
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>About</Text>
               </Link>
               <Link href="/Discography">
-                <Text
-                  _hover={{ color: "#e88700" }}
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                >
-                  Discography
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>Discography</Text>
               </Link>
-              <Text
-                _hover={{ color: "#e88700" }}
-                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-              >
-                Live
-              </Text>
+              <Text _hover={{ color: "#e88700" }}>Live</Text>
               <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
-                <Text
-                  _hover={{ color: "#e88700" }}
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                >
-                  Movie
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>Movie</Text>
               </Link>
               <Link href="https://mizuirazuband.stores.jp/">
-                <Text
-                  _hover={{ color: "#e88700" }}
-                  textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-                >
-                  Store
-                </Text>
+                <Text _hover={{ color: "#e88700" }}>Store</Text>
               </Link>
             </VStack>
           )}
