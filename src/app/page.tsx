@@ -128,7 +128,8 @@ export default function Home() {
             <Text
               fontSize="4xl"
               color="black"
-              fontFamily="Zen Kaku Gothic New, sans-serif"
+              fontWeight="bold"
+              fontFamily="japanese"
               textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
               className="shake-on-hover"
               cursor="pointer"
@@ -149,6 +150,7 @@ export default function Home() {
               onClick={handleMenuClick}
               className="menu-item"
               textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+              fontFamily={"english"}
             >
               <Link href="/About">
                 <Text _hover={{ color: "#e88700" }}>About</Text>

@@ -5,6 +5,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
+  Center,
   Flex,
   Grid,
   GridItem,
@@ -34,7 +35,8 @@ export default function Discography() {
         <Text
           fontSize="3xl"
           cursor="pointer"
-          fontFamily="Zen Kaku Gothic New, sans-serif"
+          fontWeight="bold"
+          fontFamily="japanese"
           textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
           className="shake-on-hover"
           ml={68}
@@ -58,6 +60,7 @@ export default function Discography() {
             spacing={7}
             zIndex={10}
             className="menu-item"
+            fontFamily="english"
           >
             <Link href="/">
               <Text _hover={{ color: "#e88700" }}>Home</Text>
@@ -75,7 +78,7 @@ export default function Discography() {
           </VStack>
         )}
       </VStack>
-      <Box ml={300} mt={55} color="#e8e8e8">
+      <Box ml={300} mt={55} color="#e8e8e8" fontFamily="english">
         <Breadcrumb>
           <BreadcrumbItem>
             <BreadcrumbLink href="/" _hover={{ color: "#e88700" }}>
@@ -88,11 +91,12 @@ export default function Discography() {
         </Breadcrumb>
         <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
       </Box>
-      <VStack mt={70}>
+      <Center>
         <Grid
           templateRows="repeat(2, 1fr)"
           templateColumns="repeat(8, 1fr)"
           gap={30}
+          mt={70}
           width="65%"
           height="27vh"
           cursor="pointer"
@@ -185,7 +189,7 @@ export default function Discography() {
             aspectRatio={1 / 1}
           ></GridItem>
         </Grid>
-      </VStack>
+      </Center>
     </Flex>
   );
 }

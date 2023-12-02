@@ -43,7 +43,8 @@ export default function About() {
           <Text
             fontSize="3xl"
             cursor="pointer"
-            fontFamily="Zen Kaku Gothic New, sans-serif"
+            fontWeight="bold"
+            fontFamily="japanese"
             textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
             className="shake-on-hover"
             ml={68}
@@ -67,6 +68,7 @@ export default function About() {
               spacing={7}
               zIndex={10}
               className="menu-item"
+              fontFamily="english"
             >
               <Link href="/">
                 <Text _hover={{ color: "#e88700" }}>Home</Text>
@@ -84,7 +86,7 @@ export default function About() {
             </VStack>
           )}
         </VStack>
-        <Box ml={300} mt={55} color="#e8e8e8">
+        <Box ml={300} mt={55} color="#e8e8e8" fontFamily="english">
           <Breadcrumb>
             <BreadcrumbItem>
               <BreadcrumbLink href="/" _hover={{ color: "#e88700" }}>
