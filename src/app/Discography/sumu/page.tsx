@@ -122,12 +122,17 @@ export default function Sumu() {
               </Text>
               <Box mt={2}>
                 <Text fontSize="16px" fontFamily="english">
-                  Digital Single - 2021.10.12
+                  7inch Vinyl / Digital Single - 2021.10.12
                 </Text>
               </Box>
               <Box mt={7}>
                 <Text fontSize="16px" fontFamily="english" color={"#55499b"}>
                   TRACKLISTING
+                </Text>
+              </Box>
+              <Box mt={5}>
+                <Text fontSize="16px" fontFamily="english">
+                  SIDE A
                 </Text>
               </Box>
               <Box
@@ -150,6 +155,33 @@ export default function Sumu() {
                       <FaSpotify size={20} />
                     </Box>
                   </Link>
+                </HStack>
+              </Box>
+              <Box
+                height="1px"
+                backgroundColor="gray.300"
+                width="100%"
+                mt={1}
+              />
+              <Box mt={3}>
+                <Text fontSize="16px" fontFamily="english">
+                  SIDE B
+                </Text>
+              </Box>
+              <Box
+                height="1px"
+                backgroundColor="gray.300"
+                width="100%"
+                mt={3}
+              />
+              <Box mt={1} ml={1}>
+                <HStack>
+                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
+                    1　
+                  </Text>
+                  <Text fontSize="16px" fontWeight="500" fontFamily="english">
+                    su-mu -Don’t Stop- Keiichi Sokabe Remix
+                  </Text>
                 </HStack>
               </Box>
               <Box
