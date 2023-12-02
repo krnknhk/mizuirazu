@@ -93,7 +93,7 @@ export default function Discography() {
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink href="#">uturu</BreadcrumbLink>
+            <BreadcrumbLink href="#">bakeru</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
         <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
@@ -104,7 +104,7 @@ export default function Discography() {
             <GridItem colSpan={6}>
               <AspectRatio ratio={1}>
                 <Box
-                  backgroundImage="url('/uturu.png')"
+                  backgroundImage="url('/20210828_28.jpg')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
@@ -119,70 +119,32 @@ export default function Discography() {
                 fontFamily="english"
                 as="i"
               >
-                『uturu』
+                『bakeru』
               </Text>
               <Box mt={2}>
                 <Text fontSize="20px" fontFamily="english">
-                  Digital Single - 2023.12.6
+                  Digital Single - 2022.10.22
                 </Text>
               </Box>
               <Box mt={5}>
                 <Text fontSize="23px" fontWeight="bold" fontFamily="english">
-                  1. uturu
+                  1. bakeru and enjiru
                 </Text>
-              </Box>
-              <Box mt={20}>
-                <Text
-                  fontSize="18px"
-                  fontWeight="bold"
-                  fontFamily="english"
-                  as="u"
-                >
-                  Guest Musicians
-                </Text>
-              </Box>
-              <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
-                  米山ミサ(浮/ vo)
-                </Text>
-              </Box>
-              <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
-                  マーティ・ホロベック(bass solo)
-                </Text>
-              </Box>
-              <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
-                  下田開登(ex picnic you、跡地/rap)
-                </Text>
-              </Box>
-              <Box mt={10}>
-                <Text
-                  fontSize="18px"
-                  fontWeight="bold"
-                  fontFamily="english"
-                  as="u"
-                >
-                  Recording
-                </Text>
-              </Box>
-              <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
-                  米津裕二郎(Recording, Mix and Mastering)
-                </Text>
-              </Box>
-              <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
-                  Recorded at Sound-m Studio(WAREHOUSE TRACKS)
-                </Text>
-              </Box>
-              <Box mt={2}>
-                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
-                  Mixed at STUDIO TORCH
+                <Text fontSize="23px" fontWeight="bold" fontFamily="english">
+                  2. bakeru
                 </Text>
               </Box>
             </GridItem>
           </Grid>
+          <Box p={10}>
+            <iframe
+              src="https://open.spotify.com/embed/track/4pXgB3pcdDFLrUx80prb2m?utm_source=generator"
+              width="70%"
+              height="250"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </Box>
         </Box>
       </Center>
     </Flex>
