@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  AspectRatio,
   Box,
   Breadcrumb,
   BreadcrumbItem,
@@ -100,26 +101,92 @@ export default function Discography() {
       <Center>
         <Box width="80%" minH="70vh" backgroundColor="#f4f4ed" mt={"10vh"}>
           <Grid
-            templateRows="repeat(10, 1fr)"
             templateColumns="repeat(12, 1fr)"
-            height="150vh"
-            gap={30}
+            gap={20}
             mt={10}
+            mb={10}
             ml={10}
           >
-            <GridItem
-              rowSpan={4}
-              colSpan={5}
-              backgroundImage="url('/uturu.png')"
-              backgroundRepeat="no-repeat"
-              backgroundSize="cover"
-              boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-            ></GridItem>
+            <GridItem colSpan={6}>
+              <AspectRatio ratio={1}>
+                <Box
+                  backgroundImage="url('/uturu.png')"
+                  backgroundRepeat="no-repeat"
+                  backgroundSize="cover"
+                  boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                />
+              </AspectRatio>
+            </GridItem>
 
-            <GridItem rowSpan={4} colSpan={7}>
-              <Text fontSize="30px" fontWeight="400" fontFamily="english">
-                Digital Single「bakeru」
+            <GridItem colSpan={6}>
+              <Text
+                fontSize="40px"
+                fontWeight="bold"
+                fontFamily="english"
+                as="i"
+              >
+                『uturu』
               </Text>
+              <Box mt={2}>
+                <Text fontSize="20px" fontFamily="english">
+                  Digital Single - 2023.12.6
+                </Text>
+              </Box>
+              <Box mt={5}>
+                <Text fontSize="23px" fontWeight="bold" fontFamily="english">
+                  1. uturu
+                </Text>
+              </Box>
+              <Box mt={20}>
+                <Text
+                  fontSize="18px"
+                  fontWeight="bold"
+                  fontFamily="english"
+                  as="u"
+                >
+                  Guest Musicians
+                </Text>
+              </Box>
+              <Box mt={2}>
+                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                  米山ミサ(浮/ vo)
+                </Text>
+              </Box>
+              <Box mt={2}>
+                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                  マーティ・ホロベック(bass solo)
+                </Text>
+              </Box>
+              <Box mt={2}>
+                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                  下田開登(ex picnic you、跡地/rap)
+                </Text>
+              </Box>
+              <Box mt={10}>
+                <Text
+                  fontSize="18px"
+                  fontWeight="bold"
+                  fontFamily="english"
+                  as="u"
+                >
+                  Recording
+                </Text>
+              </Box>
+              <Box mt={2}>
+                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                  米津裕二郎(Recording, Mix and Mastering)
+                </Text>
+              </Box>
+              <Box mt={2}>
+                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                  Recorded at Sound-m Studio(WAREHOUSE TRACKS)
+                </Text>
+              </Box>
+              <Box mt={2}>
+                <Text fontSize="16px" fontWeight="bold" fontFamily="japanese">
+                  Mixed at STUDIO TORCH
+                </Text>
+              </Box>
             </GridItem>
           </Grid>
         </Box>
