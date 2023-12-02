@@ -90,6 +90,7 @@ export default function Discography() {
       </Box>
       <VStack mt={70}>
         <Grid
+          templateRows="repeat(2, 1fr)"
           templateColumns="repeat(8, 1fr)"
           gap={30}
           width="65%"
@@ -97,6 +98,7 @@ export default function Discography() {
           cursor="pointer"
         >
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('/uturu.png')"
             backgroundRepeat="no-repeat"
@@ -108,6 +110,7 @@ export default function Discography() {
           ></GridItem>
 
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('/20210828_28.jpg')"
             backgroundRepeat="no-repeat"
@@ -118,6 +121,7 @@ export default function Discography() {
           ></GridItem>
 
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('/su-mu_single.png')"
             backgroundRepeat="no-repeat"
@@ -128,6 +132,7 @@ export default function Discography() {
           ></GridItem>
 
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('/hotonndokara_jacket.jpeg')"
             backgroundRepeat="no-repeat"
@@ -136,16 +141,8 @@ export default function Discography() {
             className="shake-on-hover"
             aspectRatio={1 / 1}
           ></GridItem>
-        </Grid>
-        <Grid
-          templateColumns="repeat(8, 1fr)"
-          gap={30}
-          width="65%"
-          height="27vh"
-          cursor="pointer"
-          mt={21}
-        >
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('/almostEmpty_single.png')"
             backgroundRepeat="no-repeat"
@@ -156,6 +153,7 @@ export default function Discography() {
           ></GridItem>
 
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('/5dgt_B3I-1.jpeg')"
             backgroundRepeat="no-repeat"
@@ -166,6 +164,7 @@ export default function Discography() {
           ></GridItem>
 
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('afternoon-night.jpeg')"
             backgroundRepeat="no-repeat"
@@ -176,6 +175,7 @@ export default function Discography() {
           ></GridItem>
 
           <GridItem
+            rowSpan={1}
             colSpan={2}
             backgroundImage="url('/monochrome.jpeg')"
             backgroundRepeat="no-repeat"
