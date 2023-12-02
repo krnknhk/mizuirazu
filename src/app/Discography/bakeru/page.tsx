@@ -21,7 +21,7 @@ import { useState } from "react";
 import { FaSpotify } from "react-icons/fa";
 import "../../style.css";
 
-export default function Discography() {
+export default function Bakeru() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {

@@ -1,3 +1,4 @@
+/* eslint no-irregular-whitespace: "off" */
 "use client";
 
 import {
@@ -10,14 +11,17 @@ import {
   Flex,
   Grid,
   GridItem,
+  HStack,
+  Spacer,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useState } from "react";
+import { FaSpotify } from "react-icons/fa";
 import "../../style.css";
 
-export default function Discography() {
+export default function Sumu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -93,7 +97,7 @@ export default function Discography() {
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink href="#">bakeru</BreadcrumbLink>
+            <BreadcrumbLink href="#">sumu</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
         <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
@@ -104,7 +108,7 @@ export default function Discography() {
             <GridItem colSpan={6}>
               <AspectRatio ratio={1}>
                 <Box
-                  backgroundImage="url('/20210828_28.jpg')"
+                  backgroundImage="url('/su-mu_single.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
@@ -113,38 +117,49 @@ export default function Discography() {
             </GridItem>
 
             <GridItem colSpan={6}>
-              <Text
-                fontSize="40px"
-                fontWeight="bold"
-                fontFamily="english"
-                as="i"
-              >
-                『bakeru』
+              <Text fontSize="30px" fontWeight="bold" fontFamily="english">
+                sumu
               </Text>
               <Box mt={2}>
-                <Text fontSize="20px" fontFamily="english">
-                  Digital Single - 2022.10.22
+                <Text fontSize="16px" fontFamily="english">
+                  Digital Single - 2021.10.12
                 </Text>
               </Box>
-              <Box mt={5}>
-                <Text fontSize="23px" fontWeight="bold" fontFamily="english">
-                  1. bakeru and enjiru
-                </Text>
-                <Text fontSize="23px" fontWeight="bold" fontFamily="english">
-                  2. bakeru
+              <Box mt={7}>
+                <Text fontSize="16px" fontFamily="english" color={"#55499b"}>
+                  TRACKLISTING
                 </Text>
               </Box>
+              <Box
+                height="1px"
+                backgroundColor="gray.300"
+                width="100%"
+                mt={3}
+              />
+              <Box mt={1} ml={1}>
+                <HStack>
+                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
+                    1　
+                  </Text>
+                  <Text fontSize="16px" fontWeight="500" fontFamily="english">
+                    su-mu
+                  </Text>
+                  <Spacer />
+                  <Link href="https://open.spotify.com/intl-ja/track/1XRzXMCpAsXJ72wVu91hfP?si=6139392f6b2b4837">
+                    <Box color="#3bd300">
+                      <FaSpotify size={20} />
+                    </Box>
+                  </Link>
+                </HStack>
+              </Box>
+              <Box
+                height="1px"
+                backgroundColor="gray.300"
+                width="100%"
+                mt={1}
+              />
             </GridItem>
           </Grid>
-          <Box p={10}>
-            <iframe
-              src="https://open.spotify.com/embed/track/4pXgB3pcdDFLrUx80prb2m?utm_source=generator"
-              width="70%"
-              height="250"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
-          </Box>
         </Box>
       </Center>
     </Flex>
