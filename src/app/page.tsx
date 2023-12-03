@@ -1,9 +1,18 @@
 "use client";
 
-import { Box, Button, Flex, Spinner, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  IconButton,
+  Spinner,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import useSound from "use-sound";
 import "./style.css";
 import { mediaQuery, useMediaQuery } from "./useMediaQuery";
@@ -126,34 +135,40 @@ export default function Home() {
         onClick={handleScreenClick}
       >
         <Box position="absolute">
-          <VStack position="relative" top={30} left={30}>
-            <Box onClick={handleTitleClick}>
-              <Text
-                fontFamily="japanese3"
-                fontSize="2xl"
-                color="black"
-                fontWeight="bold"
-                textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
-                className="shake-on-hover"
-                cursor="pointer"
-                _hover={{ color: "#e88700" }}
-                onClick={toggleMenu}
-                mb={3}
-              >
-                水いらず
-              </Text>
-            </Box>
-            {isMenuOpen && (
+          <Box onClick={handleTitleClick}>
+            <IconButton
+              icon={<GiHamburgerMenu />}
+              aria-label="Open Menu"
+              color={"#e88700"}
+              position="relative"
+              top={30}
+              left={30}
+              zIndex={100}
+              onClick={toggleMenu}
+            />
+          </Box>
+          {isMenuOpen && (
+            <Box
+              position="fixed"
+              top={0}
+              left={0}
+              width="100%"
+              height="100%"
+              bg="rgba(0, 0, 0, 0.5)"
+              zIndex={1}
+            >
               <VStack
-                bg="transparent"
-                fontSize="xl"
+                fontSize="2xl"
                 fontWeight="bold"
-                color="black"
-                spacing={5}
-                onClick={handleMenuClick}
+                color="white"
+                spacing={7}
                 className="menu-item"
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                 fontFamily={"english"}
+                height="100%"
+                display="flex"
+                justifyContent="center"
+                onClick={handleMenuClick}
               >
                 <Link href="/About">
                   <Text _hover={{ color: "#e88700" }}>About</Text>
@@ -171,8 +186,8 @@ export default function Home() {
                   <Text _hover={{ color: "#e88700" }}>Store</Text>
                 </Link>
               </VStack>
-            )}
-          </VStack>
+            </Box>
+          )}
         </Box>
         <Flex justifyContent="center" alignItems="center" height="100vh">
           {isLoading ? (
