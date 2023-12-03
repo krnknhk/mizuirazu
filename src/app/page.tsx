@@ -137,12 +137,12 @@ export default function Home() {
         <Box position="absolute">
           <Box onClick={handleTitleClick}>
             <IconButton
-              icon={<GiHamburgerMenu />}
+              icon={<GiHamburgerMenu size={30} />}
               aria-label="Open Menu"
               color={"#e88700"}
-              position="relative"
-              top={30}
-              left={30}
+              position="fixed"
+              right="30px"
+              bottom="30px"
               zIndex={100}
               onClick={toggleMenu}
             />
