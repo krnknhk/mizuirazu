@@ -126,7 +126,7 @@ export default function Home() {
         onClick={handleScreenClick}
       >
         <Box position="absolute">
-          <VStack position="relative" top={30} left={7}>
+          <VStack position="relative" top={30} left={30}>
             <Box onClick={handleTitleClick}>
               <Text
                 fontFamily="japanese3"
@@ -146,7 +146,7 @@ export default function Home() {
             {isMenuOpen && (
               <VStack
                 bg="transparent"
-                fontSize="lg"
+                fontSize="xl"
                 fontWeight="bold"
                 color="black"
                 spacing={5}
