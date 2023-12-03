@@ -27,10 +27,10 @@ export default function Footer() {
               <FaInstagram size={25} />
             </Link>
           </HStack>
-          <Text fontSize="15px" color="#e8e8e8">
+          <Text fontSize="14px" color="#e8e8e8">
             Copyright © mizuirazu 2023
           </Text>
-          <Text fontSize="15px" color="#e8e8e8">
+          <Text fontSize="13px" color="#e8e8e8">
             site by misaki komiyama
           </Text>
         </VStack>
