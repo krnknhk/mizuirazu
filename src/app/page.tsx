@@ -137,6 +137,25 @@ export default function Home() {
         style={cursorStyle}
         onClick={handleScreenClick}
       >
+        <Box maxH="100vh" position="absolute">
+          <Box
+            position="relative"
+            top={30}
+            left={30}
+            onClick={handleTitleClick}
+          >
+            <Text
+              fontFamily="japanese3"
+              color="rgba(232, 135, 0, 0.8)"
+              fontSize="2xl"
+              fontWeight="bold"
+              textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
+            >
+              水いらず
+            </Text>
+          </Box>
+        </Box>
+
         <Box onClick={handleTitleClick}>
           <IconButton
             icon={<GiHamburgerMenu size={30} />}
