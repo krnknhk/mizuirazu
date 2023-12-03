@@ -212,19 +212,13 @@ export default function Home() {
               {showPlayButton && (
                 <Button
                   leftIcon={<FaVolumeUp size={50} />}
-                  bg={"transparent"}
                   color={"#e88700"}
-                  _hover={{
-                    color: "black",
-                    bg: "transparent",
-                  }}
+                  bg={"transparent"}
                   onClick={handlePlay}
                 ></Button>
               )}
               {!showPlayButton && (
                 <Button
-                  onClick={toggleMute}
-                  m={2}
                   leftIcon={
                     isMuted ? (
                       <FaVolumeUp size={40} />
@@ -232,8 +226,10 @@ export default function Home() {
                       <FaVolumeMute size={40} />
                     )
                   }
+                  color={"black"}
                   bg={"transparent"}
-                  _hover={{ color: "#e88700", bg: "transparent" }}
+                  onClick={toggleMute}
+                  m={2}
                 ></Button>
               )}
             </>
