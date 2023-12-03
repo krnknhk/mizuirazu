@@ -48,7 +48,7 @@ export default function Home() {
   const plays = [play1, play2, play3];
   const stops = [stop1, stop2, stop3, stop4];
   const sounds = [sound1, sound2, sound3, sound4];
-  const jpgFiles = ["/20210828_1.jpg", "/20210828_26.jpg", "/20210828_6.jpg"];
+  const jpgFiles = ["/20210828_1.jpg", "/20210828_9.jpg", "/20210828_6.jpg"];
 
   const handleScreenClick = () => {
     if (!isClickable) return;
@@ -100,9 +100,10 @@ export default function Home() {
   useEffect(() => {
     const preJpgFiles = [
       "/20210828_1.jpg",
-      "/uturu2.png",
-      "/20210828_26.jpg",
+      "/20210828_6.jpg",
+      "/20210828_9.jpg",
       "/20210828_50.jpg",
+      "/uturu2.png",
     ];
 
     const preloadImages = () => {
@@ -199,7 +200,10 @@ export default function Home() {
                   leftIcon={<FaVolumeUp size={50} />}
                   bg={"transparent"}
                   color={"#e88700"}
-                  _hover={{ color: "black", bg: "transparent" }}
+                  _hover={{
+                    color: "rgba(232, 135, 0, 0.6)",
+                    bg: "transparent",
+                  }}
                   onClick={handlePlay}
                 ></Button>
               )}
@@ -246,7 +250,7 @@ export default function Home() {
                 textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
                 className="shake-on-hover"
                 cursor="pointer"
-                _hover={{ color: "#e88700" }}
+                _hover={{ color: "rgba(232, 135, 0, 0.7)" }}
                 onClick={toggleMenu}
                 mb={3}
               >
@@ -294,7 +298,10 @@ export default function Home() {
                   leftIcon={<FaVolumeUp size={100} />}
                   bg={"transparent"}
                   color={"#e88700"}
-                  _hover={{ color: "black", bg: "transparent" }}
+                  _hover={{
+                    color: "rgba(232, 135, 0, 0.6)",
+                    bg: "transparent",
+                  }}
                   onClick={handlePlay}
                 ></Button>
               )}
