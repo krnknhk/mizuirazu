@@ -75,7 +75,7 @@ export default function Hotondokara() {
           <Center>
             <Box width="100vw" backgroundColor="#f4f4ed" mt="100px">
               <Grid templateColumns="repeat(2, 1fr)" gap={5} m={8}>
-                <GridItem colSpan={6}>
+                <GridItem colSpan={2}>
                   <AspectRatio ratio={1}>
                     <Box
                       backgroundImage="url('/hotonndokara_jacket.jpeg')"
@@ -86,7 +86,7 @@ export default function Hotondokara() {
                   </AspectRatio>
                 </GridItem>
 
-                <GridItem colSpan={6}>
+                <GridItem colSpan={2}>
                   <Text fontSize="30px" fontWeight="bold">
                     ほとんど、空
                   </Text>
