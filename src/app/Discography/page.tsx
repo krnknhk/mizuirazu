@@ -37,7 +37,6 @@ export default function Discography() {
           >
             <Box
               ml={5}
-              mt={0}
               color="#e8e8e8"
               fontFamily="english"
               position="relative"
@@ -58,7 +57,7 @@ export default function Discography() {
             </Box>
           </Box>
 
-          <Box width="100vw" backgroundColor="#f4f4ed" mt={"100px"}>
+          <Box width="100vw" backgroundColor="#f4f4ed" mt="100px">
             <Center>
               <Grid
                 templateColumns="repeat(2, 1fr)"

@@ -38,7 +38,6 @@ export default function Live() {
           >
             <Box
               ml={5}
-              mt={0}
               color="#e8e8e8"
               fontFamily="english"
               position="relative"
