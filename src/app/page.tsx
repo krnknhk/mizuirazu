@@ -228,6 +228,7 @@ export default function Home() {
                   }
                   color={"black"}
                   bg={"transparent"}
+                  _hover={{ bg: "transparent" }}
                   onClick={toggleMute}
                   m={2}
                 ></Button>
