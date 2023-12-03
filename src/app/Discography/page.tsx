@@ -10,6 +10,7 @@ import {
   Grid,
   GridItem,
   Spinner,
+  Text,
   VStack,
 } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
@@ -308,7 +309,10 @@ export default function Discography() {
         alignItems={"center"}
         backgroundColor={"gray.200"}
       >
-        <Spinner size="xl" />
+        <VStack>
+          <Text>Loading...</Text>
+          <Spinner size="xl" />
+        </VStack>
       </Box>
     );
   }

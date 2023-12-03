@@ -214,7 +214,10 @@ export default function Live() {
         alignItems={"center"}
         backgroundColor={"gray.200"}
       >
-        <Spinner size="xl" />
+        <VStack>
+          <Text>Loading...</Text>
+          <Spinner size="xl" />
+        </VStack>
       </Box>
     );
   }
