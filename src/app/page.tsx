@@ -6,8 +6,10 @@ import React, { useEffect, useState } from "react";
 import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import useSound from "use-sound";
 import "./style.css";
+import { mediaQuery, useMediaQuery } from "./useMediaQuery";
 
 export default function Home() {
+  const isSp = useMediaQuery(mediaQuery.sp);
   const soundFiles = ["/uturu_edit.mp3", "/sumu_edit.mp3", "/bakeru_edit.mp3"];
   const [currentSound, setCurrentSound] = useState(0);
   const [currentJpg, setCurrentJpg] = useState(0);
@@ -111,97 +113,193 @@ export default function Home() {
     }
   }, [sounds]);
 
-  return (
-    <Box
-      backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      backgroundImage={currentBackground}
-      height="100vh"
-      overflow={"hidden"}
-      style={cursorStyle}
-      onClick={handleScreenClick}
-    >
-      <Box maxH="100vh" position="absolute">
-        <VStack position="relative" top={30} left={50}>
-          <Box onClick={handleTitleClick}>
-            <Text
-              fontFamily="japanese3"
-              fontSize="4xl"
-              color="black"
-              fontWeight="bold"
-              textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
-              className="shake-on-hover"
-              cursor="pointer"
-              _hover={{ color: "#e88700" }}
-              onClick={toggleMenu}
-              mb={3}
-            >
-              水いらず
-            </Text>
-          </Box>
-          {isMenuOpen && (
-            <VStack
-              bg="transparent"
-              fontSize="2xl"
-              fontWeight="bold"
-              color="black"
-              spacing={7}
-              onClick={handleMenuClick}
-              className="menu-item"
-              textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
-              fontFamily={"english"}
-            >
-              <Link href="/About">
-                <Text _hover={{ color: "#e88700" }}>About</Text>
-              </Link>
-              <Link href="/Discography">
-                <Text _hover={{ color: "#e88700" }}>Discography</Text>
-              </Link>
-              <Link href="/Live">
-                <Text _hover={{ color: "#e88700" }}>Live</Text>
-              </Link>
-              <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
-                <Text _hover={{ color: "#e88700" }}>Movie</Text>
-              </Link>
-              <Link href="https://mizuirazuband.stores.jp/">
-                <Text _hover={{ color: "#e88700" }}>Store</Text>
-              </Link>
-            </VStack>
+  if (isSp) {
+    return (
+      <Box
+        backgroundSize="cover"
+        backgroundPosition="center"
+        backgroundRepeat="no-repeat"
+        backgroundImage={currentBackground}
+        height="100vh"
+        overflow={"hidden"}
+        style={cursorStyle}
+        onClick={handleScreenClick}
+      >
+        <Box position="absolute">
+          <VStack position="relative" top={30} left={7}>
+            <Box onClick={handleTitleClick}>
+              <Text
+                fontFamily="japanese3"
+                fontSize="2xl"
+                color="black"
+                fontWeight="bold"
+                textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
+                className="shake-on-hover"
+                cursor="pointer"
+                _hover={{ color: "#e88700" }}
+                onClick={toggleMenu}
+                mb={3}
+              >
+                水いらず
+              </Text>
+            </Box>
+            {isMenuOpen && (
+              <VStack
+                bg="transparent"
+                fontSize="lg"
+                fontWeight="bold"
+                color="black"
+                spacing={5}
+                onClick={handleMenuClick}
+                className="menu-item"
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+                fontFamily={"english"}
+              >
+                <Link href="/About">
+                  <Text _hover={{ color: "#e88700" }}>About</Text>
+                </Link>
+                <Link href="/Discography">
+                  <Text _hover={{ color: "#e88700" }}>Discography</Text>
+                </Link>
+                <Link href="/Live">
+                  <Text _hover={{ color: "#e88700" }}>Live</Text>
+                </Link>
+                <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
+                  <Text _hover={{ color: "#e88700" }}>Movie</Text>
+                </Link>
+                <Link href="https://mizuirazuband.stores.jp/">
+                  <Text _hover={{ color: "#e88700" }}>Store</Text>
+                </Link>
+              </VStack>
+            )}
+          </VStack>
+        </Box>
+        <Flex justifyContent="center" alignItems="center" height="100vh">
+          {isLoading ? (
+            <Spinner size="xl" />
+          ) : (
+            <>
+              {showPlayButton && (
+                <Button
+                  leftIcon={<FaVolumeUp size={50} />}
+                  bg={"transparent"}
+                  _hover={{ color: "#e88700", bg: "transparent" }}
+                  onClick={handlePlay}
+                ></Button>
+              )}
+              {!showPlayButton && (
+                <Button
+                  onClick={toggleMute}
+                  m={2}
+                  leftIcon={
+                    isMuted ? (
+                      <FaVolumeUp size={40} />
+                    ) : (
+                      <FaVolumeMute size={40} />
+                    )
+                  }
+                  bg={"transparent"}
+                  _hover={{ color: "#e88700", bg: "transparent" }}
+                ></Button>
+              )}
+            </>
           )}
-        </VStack>
+        </Flex>
       </Box>
-      <Flex justifyContent="center" alignItems="center" height="100vh">
-        {isLoading ? (
-          <Spinner size="xl" />
-        ) : (
-          <>
-            {showPlayButton && (
-              <Button
-                leftIcon={<FaVolumeUp size={100} />}
-                bg={"transparent"}
-                _hover={{ color: "#e88700", bg: "transparent" }}
-                onClick={handlePlay}
-              ></Button>
+    );
+  } else {
+    return (
+      <Box
+        backgroundSize="cover"
+        backgroundPosition="center"
+        backgroundRepeat="no-repeat"
+        backgroundImage={currentBackground}
+        height="100vh"
+        overflow={"hidden"}
+        style={cursorStyle}
+        onClick={handleScreenClick}
+      >
+        <Box maxH="100vh" position="absolute">
+          <VStack position="relative" top={30} left={50}>
+            <Box onClick={handleTitleClick}>
+              <Text
+                fontFamily="japanese3"
+                fontSize="4xl"
+                color="black"
+                fontWeight="bold"
+                textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
+                className="shake-on-hover"
+                cursor="pointer"
+                _hover={{ color: "#e88700" }}
+                onClick={toggleMenu}
+                mb={3}
+              >
+                水いらず
+              </Text>
+            </Box>
+            {isMenuOpen && (
+              <VStack
+                bg="transparent"
+                fontSize="2xl"
+                fontWeight="bold"
+                color="black"
+                spacing={7}
+                onClick={handleMenuClick}
+                className="menu-item"
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
+                fontFamily={"english"}
+              >
+                <Link href="/About">
+                  <Text _hover={{ color: "#e88700" }}>About</Text>
+                </Link>
+                <Link href="/Discography">
+                  <Text _hover={{ color: "#e88700" }}>Discography</Text>
+                </Link>
+                <Link href="/Live">
+                  <Text _hover={{ color: "#e88700" }}>Live</Text>
+                </Link>
+                <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
+                  <Text _hover={{ color: "#e88700" }}>Movie</Text>
+                </Link>
+                <Link href="https://mizuirazuband.stores.jp/">
+                  <Text _hover={{ color: "#e88700" }}>Store</Text>
+                </Link>
+              </VStack>
             )}
-            {!showPlayButton && (
-              <Button
-                onClick={toggleMute}
-                m={2}
-                leftIcon={
-                  isMuted ? (
-                    <FaVolumeUp size={50} />
-                  ) : (
-                    <FaVolumeMute size={50} />
-                  )
-                }
-                bg={"transparent"}
-                _hover={{ color: "#e88700", bg: "transparent" }}
-              ></Button>
-            )}
-          </>
-        )}
-      </Flex>
-    </Box>
-  );
+          </VStack>
+        </Box>
+        <Flex justifyContent="center" alignItems="center" height="100vh">
+          {isLoading ? (
+            <Spinner size="xl" />
+          ) : (
+            <>
+              {showPlayButton && (
+                <Button
+                  leftIcon={<FaVolumeUp size={100} />}
+                  bg={"transparent"}
+                  _hover={{ color: "#e88700", bg: "transparent" }}
+                  onClick={handlePlay}
+                ></Button>
+              )}
+              {!showPlayButton && (
+                <Button
+                  onClick={toggleMute}
+                  m={2}
+                  leftIcon={
+                    isMuted ? (
+                      <FaVolumeUp size={50} />
+                    ) : (
+                      <FaVolumeMute size={50} />
+                    )
+                  }
+                  bg={"transparent"}
+                  _hover={{ color: "#e88700", bg: "transparent" }}
+                ></Button>
+              )}
+            </>
+          )}
+        </Flex>
+      </Box>
+    );
+  }
 }
