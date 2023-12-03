@@ -21,7 +21,7 @@ export default function Home() {
   const soundFiles = ["/uturu_edit.mp3", "/sumu_edit.mp3", "/bakeru_edit.mp3"];
   const [currentSound, setCurrentSound] = useState(0);
   const [currentJpg, setCurrentJpg] = useState(0);
-  const [currentBackground, setCurrentBackground] = useState("/20210828_9.jpg");
+  const [currentBackground, setCurrentBackground] = useState("/uturu.png");
   const [isClickable, setIsClickable] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true);
@@ -100,7 +100,7 @@ export default function Home() {
   useEffect(() => {
     const preJpgFiles = [
       "/20210828_1.jpg",
-      "/20210828_9.jpg",
+      "/uturu.png",
       "/20210828_26.jpg",
       "/20210828_50.jpg",
     ];
@@ -198,7 +198,8 @@ export default function Home() {
                 <Button
                   leftIcon={<FaVolumeUp size={50} />}
                   bg={"transparent"}
-                  _hover={{ color: "#e88700", bg: "transparent" }}
+                  color={"#e88700"}
+                  _hover={{ color: "black", bg: "transparent" }}
                   onClick={handlePlay}
                 ></Button>
               )}
@@ -240,7 +241,7 @@ export default function Home() {
               <Text
                 fontFamily="japanese3"
                 fontSize="4xl"
-                color="black"
+                color="#e88700"
                 fontWeight="bold"
                 textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
                 className="shake-on-hover"
@@ -292,7 +293,8 @@ export default function Home() {
                 <Button
                   leftIcon={<FaVolumeUp size={100} />}
                   bg={"transparent"}
-                  _hover={{ color: "#e88700", bg: "transparent" }}
+                  color={"#e88700"}
+                  _hover={{ color: "black", bg: "transparent" }}
                   onClick={handlePlay}
                 ></Button>
               )}
@@ -325,7 +327,10 @@ export default function Home() {
         alignItems={"center"}
         backgroundColor={"gray.200"}
       >
-        <Spinner size="xl" />
+        <VStack>
+          <Text>Loading...</Text>
+          <Spinner size="xl" />
+        </VStack>
       </Box>
     );
   }
