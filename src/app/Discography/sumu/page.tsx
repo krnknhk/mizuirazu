@@ -36,10 +36,10 @@ export default function Sumu() {
     >
       <VStack position="absolute" alignItems="flex-start" m={3} color="#e8e8e8">
         <Text
+          fontFamily="japanese3"
           fontSize="3xl"
           cursor="pointer"
           fontWeight="bold"
-          fontFamily="japanese"
           textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
           className="shake-on-hover"
           ml={68}

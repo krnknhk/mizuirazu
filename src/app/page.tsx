@@ -126,10 +126,10 @@ export default function Home() {
         <VStack position="relative" top={30} left={50}>
           <Box onClick={handleTitleClick}>
             <Text
+              fontFamily="japanese3"
               fontSize="4xl"
               color="black"
               fontWeight="bold"
-              fontFamily="japanese"
               textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
               className="shake-on-hover"
               cursor="pointer"

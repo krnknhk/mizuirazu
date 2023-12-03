@@ -9,6 +9,7 @@ const theme = extendTheme({
   fonts: {
     japanese: "'Zen Kaku Gothic Antique', sans-serif",
     japanese2: "'Zen Kaku Gothic New', sans-serif",
+    japanese3: "'Potta One', sans-serif",
     english: "'Roboto', serif",
     english2: "'Hedvig Letters Serif', serif",
     english3: "'Press Start 2P', serif",
