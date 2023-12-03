@@ -211,7 +211,7 @@ export default function Home() {
             <>
               {showPlayButton && (
                 <Button
-                  leftIcon={<FaVolumeUp size={50} />}
+                  leftIcon={<FaVolumeUp size={70} />}
                   color={"#e88700"}
                   bg={"transparent"}
                   onClick={handlePlay}
