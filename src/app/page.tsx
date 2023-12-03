@@ -141,7 +141,7 @@ export default function Home() {
           <Box position="relative" top={30} left={30}>
             <Text
               fontFamily="japanese3"
-              color="rgba(232, 135, 0, 0.8)"
+              color="rgba(232, 135, 0, 0.7)"
               fontSize="2xl"
               fontWeight="bold"
               textShadow="2px 2px 4px rgba(0, 0, 0, 1)"
@@ -215,7 +215,7 @@ export default function Home() {
                   bg={"transparent"}
                   color={"#e88700"}
                   _hover={{
-                    color: "rgba(232, 135, 0, 0.6)",
+                    color: "black",
                     bg: "transparent",
                   }}
                   onClick={handlePlay}
