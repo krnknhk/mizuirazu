@@ -70,7 +70,7 @@ export default function About() {
                     backgroundImage="url('/20210828_6.jpg')"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
+                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
                   />
                 </AspectRatio>
               </GridItem>
@@ -106,7 +106,7 @@ export default function About() {
                     backgroundImage="url('/IMG_8394.JPG')"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
+                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
                   />
                 </AspectRatio>
               </GridItem>
@@ -213,7 +213,7 @@ export default function About() {
                     backgroundImage="url('/IMG_8396.JPG')"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
+                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
                   />
                 </AspectRatio>
               </GridItem>
@@ -224,7 +224,7 @@ export default function About() {
                     backgroundImage="url('/IMG_8395.JPG')"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
+                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
                   />
                 </AspectRatio>
               </GridItem>
@@ -235,7 +235,7 @@ export default function About() {
                     backgroundImage="url('/IMG_8393.JPG')"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
+                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
                   />
                 </AspectRatio>
               </GridItem>
