@@ -18,10 +18,9 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useState } from "react";
-import { FaSpotify } from "react-icons/fa";
 import "../../style.css";
 
-export default function Hotondokara() {
+export default function Monochrome() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -98,7 +97,7 @@ export default function Hotondokara() {
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage>
             <BreadcrumbLink href="#">
-              <Text fontFamily="japanese">ほとんど、空</Text>
+              <Text fontFamily="japanese">モノクローム</Text>
             </BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
@@ -110,7 +109,7 @@ export default function Hotondokara() {
             <GridItem colSpan={6}>
               <AspectRatio ratio={1}>
                 <Box
-                  backgroundImage="url('/hotonndokara_jacket.jpeg')"
+                  backgroundImage="url('/monochrome.jpeg')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
@@ -120,11 +119,11 @@ export default function Hotondokara() {
 
             <GridItem colSpan={6}>
               <Text fontSize="30px" fontWeight="bold">
-                ほとんど、空
+                モノクローム
               </Text>
               <Box mt={2}>
                 <Text fontSize="16px" fontFamily="english">
-                  Digital Album - 2020.12.19
+                  Single - 2018.02.26
                 </Text>
               </Box>
               <Box mt={7}>
@@ -144,14 +143,8 @@ export default function Hotondokara() {
                     1　
                   </Text>
                   <Text fontSize="15px" fontWeight="500">
-                    東京都板橋区西町2-50-4
+                    苗床
                   </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/2oSFYZm9a2PrWLLpMBibPd?si=8e9453b39c474215">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
                 </HStack>
               </Box>
               <Box
@@ -167,14 +160,9 @@ export default function Hotondokara() {
                     2　
                   </Text>
                   <Text fontSize="15px" fontWeight="500">
-                    ほとんど、空
+                    モノクローム
                   </Text>
                   <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/1TDzrIoanNwO7yHsrZEqeF?si=00a4e340674647b4">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
                 </HStack>
               </Box>
               <Box
@@ -190,129 +178,9 @@ export default function Hotondokara() {
                     3　
                   </Text>
                   <Text fontSize="15px" fontWeight="500">
-                    沈沈沈
+                    ビー玉の記憶
                   </Text>
                   <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/5yXWW5WaAC2mTeM3HUc8SV?si=472882818ca447e3">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
-                </HStack>
-              </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={1}
-              />
-
-              <Box mt={1} ml={1}>
-                <HStack>
-                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
-                    4　
-                  </Text>
-                  <Text fontSize="15px" fontWeight="500">
-                    水の重さ
-                  </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/31PHK6kEltInHFw0nXR4yv?si=3d78e6198aa64613">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
-                </HStack>
-              </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={1}
-              />
-
-              <Box mt={1} ml={1}>
-                <HStack>
-                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
-                    5　
-                  </Text>
-                  <Text fontSize="15px" fontWeight="500">
-                    午后の世界
-                  </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/32SiuARrPfi3EtX00aQ0DN?si=d7cf953bc5314fb5">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
-                </HStack>
-              </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={1}
-              />
-
-              <Box mt={1} ml={1}>
-                <HStack>
-                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
-                    6　
-                  </Text>
-                  <Text fontSize="15px" fontWeight="500">
-                    アンダースロー
-                  </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/0SOOi5IDyunK1fYzo7TAVp?si=52b42fa3244946cf">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
-                </HStack>
-              </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={1}
-              />
-
-              <Box mt={1} ml={1}>
-                <HStack>
-                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
-                    7　
-                  </Text>
-                  <Text fontSize="15px" fontWeight="500">
-                    光線
-                  </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/2h23krBBpHFDqMpKGg9mw3?si=d8c185629e3240b2">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
-                </HStack>
-              </Box>
-              <Box
-                height="1px"
-                backgroundColor="gray.300"
-                width="100%"
-                mt={1}
-              />
-
-              <Box mt={1} ml={1}>
-                <HStack>
-                  <Text fontSize="16px" fontWeight="bold" fontFamily="english2">
-                    8　
-                  </Text>
-                  <Text fontSize="15px" fontWeight="500">
-                    あと
-                  </Text>
-                  <Spacer />
-                  <Link href="https://open.spotify.com/intl-ja/track/2oR9wleoKGlwED2S3qne3v?si=65a44dc84faf43ed">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
-                    </Box>
-                  </Link>
                 </HStack>
               </Box>
               <Box

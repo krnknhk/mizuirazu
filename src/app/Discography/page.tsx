@@ -157,6 +157,7 @@ export default function Discography() {
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
             aspectRatio={1 / 1}
+            onClick={() => router.push("/Discography/hotondokara_single")}
           ></GridItem>
 
           <GridItem
@@ -168,6 +169,7 @@ export default function Discography() {
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
             aspectRatio={1 / 1}
+            onClick={() => router.push("/Discography/shinshinshin")}
           ></GridItem>
 
           <GridItem
@@ -179,6 +181,7 @@ export default function Discography() {
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
             aspectRatio={1 / 1}
+            onClick={() => router.push("/Discography/hiruyoru")}
           ></GridItem>
 
           <GridItem
@@ -190,6 +193,7 @@ export default function Discography() {
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
             aspectRatio={1 / 1}
+            onClick={() => router.push("/Discography/monochrome")}
           ></GridItem>
         </Grid>
       </Center>
