@@ -138,12 +138,7 @@ export default function Home() {
         onClick={handleScreenClick}
       >
         <Box maxH="100vh" position="absolute">
-          <Box
-            position="relative"
-            top={30}
-            left={30}
-            onClick={handleTitleClick}
-          >
+          <Box position="relative" top={30} left={30}>
             <Text
               fontFamily="japanese3"
               color="rgba(232, 135, 0, 0.8)"
