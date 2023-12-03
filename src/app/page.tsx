@@ -158,7 +158,9 @@ export default function Home() {
               <Link href="/Discography">
                 <Text _hover={{ color: "#e88700" }}>Discography</Text>
               </Link>
-              <Text _hover={{ color: "#e88700" }}>Live</Text>
+              <Link href="/Live">
+                <Text _hover={{ color: "#e88700" }}>Live</Text>
+              </Link>
               <Link href="https://www.youtube.com/@user-qi9nl3ru1l/videos">
                 <Text _hover={{ color: "#e88700" }}>Movie</Text>
               </Link>
