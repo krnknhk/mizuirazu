@@ -146,6 +146,7 @@ export default function Discography() {
             boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
             className="shake-on-hover"
             aspectRatio={1 / 1}
+            onClick={() => router.push("/Discography/hotondokara")}
           ></GridItem>
           <GridItem
             rowSpan={1}
