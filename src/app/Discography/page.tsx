@@ -80,7 +80,7 @@ export default function Discography() {
 
                 <GridItem
                   colSpan={2}
-                  backgroundImage="url('/20210828_28.jpg')"
+                  backgroundImage="url('/bakeru.png')"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
@@ -211,7 +211,7 @@ export default function Discography() {
                   <GridItem
                     rowSpan={1}
                     colSpan={2}
-                    backgroundImage="url('/20210828_28.jpg')"
+                    backgroundImage="url('/bakeru.png')"
                     backgroundRepeat="no-repeat"
                     backgroundSize="cover"
                     boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
