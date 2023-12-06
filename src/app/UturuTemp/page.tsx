@@ -564,7 +564,7 @@ export default function UturuTemp() {
                       <AccordionButton>
                         <Box as="span" flex="1" textAlign="left">
                           <Text
-                            fontSize="20px"
+                            fontSize="18px"
                             fontWeight="bold"
                             fontFamily="japanese2"
                             textColor="#55499b"
