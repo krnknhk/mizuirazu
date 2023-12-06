@@ -1,21 +1,27 @@
+/* eslint no-irregular-whitespace: "off" */
 "use client";
 
+import Footer from "@/app/Footer";
+import Menu from "@/app/menu";
+import SpMenu from "@/app/spmenu";
 import {
   AspectRatio,
   Box,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
+  Center,
   Flex,
   Grid,
   GridItem,
+  HStack,
+  Spacer,
   Spinner,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import Footer from "../Footer";
-import Menu from "../menu";
-import SpMenu from "../spmenu";
+import Link from "next/link";
+import { FaSpotify } from "react-icons/fa6";
 import "../style.css";
 import { mediaQuery, useMediaQuery } from "../useMediaQuery";
 
@@ -29,18 +35,18 @@ export default function UturuTemp() {
         <SpMenu />
         <VStack>
           <Box
-            backgroundColor="#55499b"
+            backgroundColor={"#55499b"}
             width="100vw"
             height="100px"
             position="absolute"
           >
             <Box
+              ml={5}
               color="#e8e8e8"
               fontFamily="english"
               position="relative"
               top={5}
               left={1}
-              ml={5}
             >
               <Breadcrumb>
                 <BreadcrumbItem>
@@ -49,201 +55,245 @@ export default function UturuTemp() {
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbItem isCurrentPage>
-                  <BreadcrumbLink href="#">About</BreadcrumbLink>
+                  <BreadcrumbLink href="#" fontFamily="japanese">
+                    特設ページ - uturu
+                  </BreadcrumbLink>
                 </BreadcrumbItem>
               </Breadcrumb>
               <Box height="1px" backgroundColor="gray.200" mt={1} />
             </Box>
           </Box>
 
-          <VStack mt="100px">
-            <Grid
-              templateColumns="repeat(2, 1fr)"
-              gap={5}
-              width="90%"
-              justifyContent="center"
-              mt={5}
-            >
-              <GridItem colSpan={2}>
-                <AspectRatio ratio={3 / 2}>
-                  <Box
-                    backgroundImage="url('/20210828_6.jpg')"
-                    backgroundRepeat="no-repeat"
-                    backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-                  />
-                </AspectRatio>
-              </GridItem>
+          <Center>
+            <Box width="100vw" backgroundColor="#f4f4ed" mt="100px">
+              <Grid templateColumns="repeat(2, 1fr)" gap={5} m={8}>
+                <GridItem colSpan={2}>
+                  <AspectRatio ratio={1}>
+                    <Box
+                      backgroundImage="url('/uturu.png')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                    />
+                  </AspectRatio>
+                </GridItem>
 
-              <GridItem
-                colSpan={2}
-                backgroundColor="#f4f4ed"
-                overflowY="auto"
-                rounded="md"
-                p={5}
-              >
-                <VStack align="stretch">
-                  <Text fontSize="13px" color="black" fontWeight="bold">
-                    2016年に結成された東京を拠点に活動する4人組インディ・ロック・バンド。アジアの民族音楽をもとに、スタンドアローン・コンプレックス(孤立した個人でありながらも、全体として集団的な行動を取る)なスタンスを心がけながら、独自の音楽を生み出す。メンバーは楽器よりもPCを愛用している。バンドは直接民主制を採用し、メンバー同士の仲は非常に良く、喧嘩は皆無。家が近いため、タクシー代が割り勘できる。思想や概念から作曲が始まり、家で楽曲制作を行なっている。
+                <GridItem colSpan={2}>
+                  <Text fontSize="30px" fontWeight="bold" fontFamily="english">
+                    uturu
                   </Text>
-                  <Box mt={5}>
-                    <Text
-                      fontSize="13px"
-                      color="black"
-                      fontWeight="bold"
-                      as="i"
-                    >
-                      井上真 (vo,gt)、小宮山節己 (dr)、桜井晴紀
-                      (key)、辻本秀太郎 (ba)
+                  <Box mt={2}>
+                    <Text fontSize="16px" fontFamily="english">
+                      Digital Single - 2023.12.6
                     </Text>
                   </Box>
-                </VStack>
-              </GridItem>
-
-              <GridItem colSpan={2}>
-                <AspectRatio ratio={3 / 2}>
+                  <Box mt={7}>
+                    <Text
+                      fontSize="16px"
+                      fontFamily="english"
+                      color={"#55499b"}
+                    >
+                      TRACKLISTING
+                    </Text>
+                  </Box>
                   <Box
-                    backgroundImage="url('/IMG_8394.JPG')"
-                    backgroundRepeat="no-repeat"
-                    backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={3}
                   />
-                </AspectRatio>
-              </GridItem>
-
-              <GridItem
-                colSpan={2}
-                backgroundColor="#f4f4ed"
-                overflowY="auto"
-                rounded="md"
-                p={5}
-              >
-                <Text fontSize="13px" color="black" fontWeight="bold">
-                  2020 年 12
-                  月:1stフル・アルバム『ほとんど、空』をリリース。巽啓伍(never
-                  youngbeach)、東郷清丸、天川悠雅(ギリシャラブ)、飯島はるか(に角すい)が賛辞を送り、多方面から評価を得た。翌年5月に下北沢
-                  LIVE HAUS
-                  にて、Lanes、テンテンコを共演に迎えリリース・イベント『intimacy』を開催。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="13px" color="black" fontWeight="bold" mt={3}>
-                  2021 年 10
-                  月:「su-mu」を配信リリース。アジアの民族音楽に着眼し、ケチャ、ガムラン、日本民謡、コナッコルなど、アジア的なリズムや音階をバンド・サウンドに還元する取り組みが話題を集める。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="13px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 2
-                  月:「su-mu」リリース・イベントをプラネタリウムで開催。あだち麗三郎、Pot-pourri
-                  と共演。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="13px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 10 月:「su-mu」の 7
-                  インチ・レコードがリリース。曽我部恵一(サニーデイ・サービス)が手がけたリミックスも収録された。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="13px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 10
-                  月:妖怪、インセル、都市がテーマとなったシングル「bakeru」を配信リリース。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="13px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 11 月:下北沢 THREE
-                  で企画ライブ「intimacy」を開催。ゲストに浮を迎え、音楽
-                  ZINE『痙攣』の編集長・李氏とのトークショー も行なわれた。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="13px" color="black" fontWeight="bold" mt={3}>
-                  2023 年 5 月:奇妙礼太郎との 2 マンライヴを渋谷 La.mama
-                  で行なう。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="13px" color="black" fontWeight="bold" mt={3}>
-                  2023 年 12 月:シングル「uturu」をリリース。
-                </Text>
-              </GridItem>
-            </Grid>
-
-            <Grid
-              templateColumns="repeat(2, 1fr)"
-              gap={5}
-              width="90%"
-              justifyContent="center"
-              mb={5}
-              mt={3}
-            >
-              <GridItem colSpan={2}>
-                <AspectRatio ratio={3 / 2}>
+                  <Box mt={1} ml={1}>
+                    <HStack>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="bold"
+                        fontFamily="english2"
+                      >
+                        1　
+                      </Text>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="500"
+                        fontFamily="english"
+                      >
+                        uturu
+                      </Text>
+                      <Spacer />
+                      <Link href="https://open.spotify.com/intl-ja/track/37s2uTq6xvtMGtmwdUsZuj?si=352ef57e31514f65">
+                        <Box color="#3bd300">
+                          <FaSpotify size={20} />
+                        </Box>
+                      </Link>
+                    </HStack>
+                  </Box>
                   <Box
-                    backgroundImage="url('/IMG_8396.JPG')"
-                    backgroundRepeat="no-repeat"
-                    backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={1}
                   />
-                </AspectRatio>
-              </GridItem>
+                  <Box mt={10}>
+                    <Text
+                      fontSize="16px"
+                      fontWeight="bold"
+                      fontFamily="english"
+                      as="u"
+                    >
+                      Guest Musicians
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      米山ミサ(浮/ vo)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      マーティ・ホロベック(bass solo)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      下田開登(ex picnic you、跡地/rap)
+                    </Text>
+                  </Box>
+                  <Box mt={5}>
+                    <Text
+                      fontSize="16px"
+                      fontWeight="bold"
+                      fontFamily="english"
+                      as="u"
+                    >
+                      Recording
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      米津裕二郎(Recording, Mix and Mastering)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      Recorded at Sound-m Studio(WAREHOUSE TRACKS)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      Mixed at STUDIO TORCH
+                    </Text>
+                  </Box>
+                </GridItem>
 
-              <GridItem colSpan={2}>
-                <AspectRatio ratio={3 / 2}>
+                <GridItem colSpan={2} mt={5}>
+                  <Text
+                    fontSize="25px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    textColor="#55499b"
+                  >
+                    コメント
+                  </Text>
                   <Box
-                    backgroundImage="url('/IMG_8395.JPG')"
-                    backgroundRepeat="no-repeat"
-                    backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={3}
                   />
-                </AspectRatio>
-              </GridItem>
-
-              <GridItem colSpan={2}>
-                <AspectRatio ratio={3 / 2}>
+                  <Box ml={1}>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={7}>
+                      人
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      (二つの目と二つの耳しか持たない)
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      一滴の雫として、葉から滴り落ちて地表で弾けるまでに周囲の景色をあまねく受け取ることはできない。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      例えば鏡で、景色を映すことはあっても、鏡に落とされたインクの色が景色に移ることはない。裏側を除いても別の景色が広がるばかりの一枚。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={7}>
+                      變
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      それぞれがそれぞれの履歴に紐づいた台詞を持っていて、それぞれの地点からそれを提出する。人の指で群像を差して、また折って数えることはできない。それでも観察は続く。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      挨拶はもうとっくに終わっていて、風邪をひきあったり言ってないことを読み取ったり距離を変えたりする。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      それってもう『好き』ってことじゃんね、と思う。
+                    </Text>
+                    <Text fontSize="16px" fontFamily="japanese2" mt={5}>
+                      paya（幽体コミュニケーションズ）
+                    </Text>
+                  </Box>
                   <Box
-                    backgroundImage="url('/IMG_8393.JPG')"
-                    backgroundRepeat="no-repeat"
-                    backgroundSize="cover"
-                    boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={7}
                   />
-                </AspectRatio>
-              </GridItem>
-            </Grid>
-          </VStack>
-
-          <Footer></Footer>
+                  <Box ml={1}>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={7}>
+                      なんて自由な音楽！
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      最初に持った印象はそれでした。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      しかし、それは視点や表現する内容と方法の話であって、音楽としては構築美を感じます。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      自然にストーリーが進むよう秩序だっていて、楽器の使い方も必要な音しか鳴ってませんと胸を張って言えそうな構成。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      民族音楽からエクスペリメンタルなものまで、様々なルーツは見えるのですが、結果的にそれらが全部日本的な「和」に帰結しているので、
+                      どこか懐かしく聴ける音楽でもあり、真のミクスチャー・ロックだなとも思いました。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      そして最終的に「好きだよ」で小難しいことはどうでも良くなって、楽しくリピートしちゃう、ポップさ加減が好きです。
+                    </Text>
+                    <Text fontSize="16px" fontFamily="japanese2" mt={5}>
+                      佐藤征史（くるり）
+                    </Text>
+                  </Box>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={7}
+                  />
+                </GridItem>
+              </Grid>
+            </Box>
+          </Center>
         </VStack>
+        <Footer></Footer>
       </>
     );
   } else if (isPc) {
@@ -251,7 +301,7 @@ export default function UturuTemp() {
       <>
         <Flex
           direction="column"
-          background="linear-gradient(to bottom, #55499b 23%, #dce0f2 23%, #e8e8e8)"
+          background="linear-gradient(to bottom, #55499b 100%, #dce0f2 30%, #e8e8e8)"
           minH="100vh"
         >
           <Menu></Menu>
@@ -263,186 +313,241 @@ export default function UturuTemp() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href="#">About</BreadcrumbLink>
+                <BreadcrumbLink href="#" fontFamily="japanese">
+                  特設ページ - uturu
+                </BreadcrumbLink>
               </BreadcrumbItem>
             </Breadcrumb>
             <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
           </Box>
-          <VStack mt={50}>
-            <Grid
-              templateColumns="repeat(12, 1fr)"
-              gap={10}
-              width="90%"
-              height="43vh"
-              justifyContent="center"
-            >
-              <GridItem
-                colSpan={5}
-                backgroundImage="url('/20210828_6.jpg')"
-                backgroundRepeat="no-repeat"
-                backgroundSize="cover"
-                boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
-              ></GridItem>
+          <Center>
+            <Box width="80%" minH="70vh" backgroundColor="#f4f4ed" mt={"10vh"}>
+              <Grid templateColumns="repeat(12, 1fr)" gap={20} m={10}>
+                <GridItem colSpan={6}>
+                  <AspectRatio ratio={1}>
+                    <Box
+                      backgroundImage="url('/uturu.png')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                    />
+                  </AspectRatio>
+                </GridItem>
 
-              <GridItem
-                colSpan={7}
-                backgroundColor="#f4f4ed"
-                overflowY="auto"
-                rounded="md"
-                p={8}
-              >
-                <VStack align="stretch">
-                  <Text fontSize="15px" color="black" fontWeight="bold">
-                    2016年に結成された東京を拠点に活動する4人組インディ・ロック・バンド。アジアの民族音楽をもとに、スタンドアローン・コンプレックス(孤立した個人でありながらも、全体として集団的な行動を取る)なスタンスを心がけながら、独自の音楽を生み出す。メンバーは楽器よりもPCを愛用している。バンドは直接民主制を採用し、メンバー同士の仲は非常に良く、喧嘩は皆無。家が近いため、タクシー代が割り勘できる。思想や概念から作曲が始まり、家で楽曲制作を行なっている。
+                <GridItem colSpan={6}>
+                  <Text fontSize="30px" fontWeight="bold" fontFamily="english">
+                    uturu
                   </Text>
-                  <Box mt={5}>
-                    <Text fontSize="sm" color="black" fontWeight="bold" as="i">
-                      井上真 (vo,gt)、小宮山節己 (dr)、桜井晴紀
-                      (key)、辻本秀太郎 (ba)
+                  <Box mt={2}>
+                    <Text fontSize="16px" fontFamily="english">
+                      Digital Single - 2023.12.6
                     </Text>
                   </Box>
-                </VStack>
-              </GridItem>
-            </Grid>
+                  <Box mt={7}>
+                    <Text
+                      fontSize="16px"
+                      fontFamily="english"
+                      color={"#55499b"}
+                    >
+                      TRACKLISTING
+                    </Text>
+                  </Box>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={3}
+                  />
+                  <Box mt={1} ml={1}>
+                    <HStack>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="bold"
+                        fontFamily="english2"
+                      >
+                        1　
+                      </Text>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="500"
+                        fontFamily="english"
+                      >
+                        uturu
+                      </Text>
+                      <Spacer />
+                      <Link href="https://open.spotify.com/intl-ja/track/37s2uTq6xvtMGtmwdUsZuj?si=352ef57e31514f65">
+                        <Box color="#3bd300">
+                          <FaSpotify size={20} />
+                        </Box>
+                      </Link>
+                    </HStack>
+                  </Box>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={1}
+                  />
+                  <Box mt={20}>
+                    <Text
+                      fontSize="16px"
+                      fontWeight="bold"
+                      fontFamily="english"
+                      as="u"
+                    >
+                      Guest Musicians
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      米山ミサ(浮/ vo)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      マーティ・ホロベック(bass solo)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      下田開登(ex picnic you、跡地/rap)
+                    </Text>
+                  </Box>
+                  <Box mt={5}>
+                    <Text
+                      fontSize="16px"
+                      fontWeight="bold"
+                      fontFamily="english"
+                      as="u"
+                    >
+                      Recording
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      米津裕二郎(Recording, Mix and Mastering)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      Recorded at Sound-m Studio(WAREHOUSE TRACKS)
+                    </Text>
+                  </Box>
+                  <Box mt={2}>
+                    <Text
+                      fontSize="14px"
+                      fontWeight="bold"
+                      fontFamily="japanese"
+                    >
+                      Mixed at STUDIO TORCH
+                    </Text>
+                  </Box>
+                </GridItem>
 
-            <Grid
-              templateColumns="repeat(12, 1fr)"
-              gap={5}
-              width="90%"
-              height="45vh"
-              justifyContent="center"
-              mt={35}
-            >
-              <GridItem
-                colSpan={7}
-                backgroundColor="#f4f4ed"
-                overflowY="auto"
-                rounded="md"
-                p={5}
-              >
-                <Text fontSize="15px" color="black" fontWeight="bold">
-                  2020 年 12
-                  月:1stフル・アルバム『ほとんど、空』をリリース。巽啓伍(never
-                  youngbeach)、東郷清丸、天川悠雅(ギリシャラブ)、飯島はるか(に角すい)が賛辞を送り、多方面から評価を得た。翌年5月に下北沢
-                  LIVE HAUS
-                  にて、Lanes、テンテンコを共演に迎えリリース・イベント『intimacy』を開催。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
-                  2021 年 10
-                  月:「su-mu」を配信リリース。アジアの民族音楽に着眼し、ケチャ、ガムラン、日本民謡、コナッコルなど、アジア的なリズムや音階をバンド・サウンドに還元する取り組みが話題を集める。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 2
-                  月:「su-mu」リリース・イベントをプラネタリウムで開催。あだち麗三郎、Pot-pourri
-                  と共演。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 10 月:「su-mu」の 7
-                  インチ・レコードがリリース。曽我部恵一(サニーデイ・サービス)が手がけたリミックスも収録された。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 10
-                  月:妖怪、インセル、都市がテーマとなったシングル「bakeru」を配信リリース。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
-                  2022 年 11 月:下北沢 THREE
-                  で企画ライブ「intimacy」を開催。ゲストに浮を迎え、音楽
-                  ZINE『痙攣』の編集長・李氏とのトークショー も行なわれた。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
-                  2023 年 5 月:奇妙礼太郎との 2 マンライヴを渋谷 La.mama
-                  で行なう。
-                </Text>
-                <Box
-                  height="1px"
-                  backgroundColor="gray.300"
-                  width="99%"
-                  mt={3}
-                />
-                <Text fontSize="15px" color="black" fontWeight="bold" mt={3}>
-                  2023 年 12 月:シングル「uturu」をリリース。
-                </Text>
-              </GridItem>
-
-              <GridItem
-                colSpan={5}
-                backgroundImage="url('/IMG_8394.JPG')"
-                backgroundRepeat="no-repeat"
-                backgroundSize="cover"
-                boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
-              ></GridItem>
-            </Grid>
-
-            <Grid
-              templateColumns="repeat(12, 1fr)"
-              gap={8}
-              width="90%"
-              height="35vh"
-              justifyContent="center"
-              mb={35}
-              mt={35}
-            >
-              <GridItem
-                colSpan={5}
-                backgroundImage="url('/IMG_8393.JPG')"
-                backgroundRepeat="no-repeat"
-                backgroundSize="cover"
-                boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
-              ></GridItem>
-
-              <GridItem
-                colSpan={3}
-                backgroundImage="url('/IMG_8396.JPG')"
-                backgroundRepeat="no-repeat"
-                backgroundSize="cover"
-                boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
-              ></GridItem>
-
-              <GridItem
-                colSpan={4}
-                backgroundImage="url('/IMG_8395.JPG')"
-                backgroundRepeat="no-repeat"
-                backgroundSize="cover"
-                boxShadow="0px 0px 10px 0px rgba(0,0,0,0.7)"
-              ></GridItem>
-            </Grid>
-          </VStack>
+                <GridItem colSpan={12}>
+                  <Text
+                    fontSize="25px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    textColor="#55499b"
+                  >
+                    コメント
+                  </Text>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={3}
+                  />
+                  <Box ml={1}>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={7}>
+                      人
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      (二つの目と二つの耳しか持たない)
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      一滴の雫として、葉から滴り落ちて地表で弾けるまでに周囲の景色をあまねく受け取ることはできない。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      例えば鏡で、景色を映すことはあっても、鏡に落とされたインクの色が景色に移ることはない。裏側を除いても別の景色が広がるばかりの一枚。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={7}>
+                      變
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      それぞれがそれぞれの履歴に紐づいた台詞を持っていて、それぞれの地点からそれを提出する。人の指で群像を差して、また折って数えることはできない。それでも観察は続く。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      挨拶はもうとっくに終わっていて、風邪をひきあったり言ってないことを読み取ったり距離を変えたりする。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      それってもう『好き』ってことじゃんね、と思う。
+                    </Text>
+                    <Text fontSize="16px" fontFamily="japanese2" mt={5}>
+                      paya（幽体コミュニケーションズ）
+                    </Text>
+                  </Box>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={7}
+                  />
+                  <Box ml={1}>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={7}>
+                      なんて自由な音楽！
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      最初に持った印象はそれでした。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      しかし、それは視点や表現する内容と方法の話であって、音楽としては構築美を感じます。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      自然にストーリーが進むよう秩序だっていて、楽器の使い方も必要な音しか鳴ってませんと胸を張って言えそうな構成。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      民族音楽からエクスペリメンタルなものまで、様々なルーツは見えるのですが、結果的にそれらが全部日本的な「和」に帰結しているので、
+                      どこか懐かしく聴ける音楽でもあり、真のミクスチャー・ロックだなとも思いました。
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2" mt={3}>
+                      そして最終的に「好きだよ」で小難しいことはどうでも良くなって、楽しくリピートしちゃう、ポップさ加減が好きです。
+                    </Text>
+                    <Text fontSize="16px" fontFamily="japanese2" mt={5}>
+                      佐藤征史（くるり）
+                    </Text>
+                  </Box>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={7}
+                  />
+                </GridItem>
+              </Grid>
+            </Box>
+          </Center>
         </Flex>
         <Footer></Footer>
       </>

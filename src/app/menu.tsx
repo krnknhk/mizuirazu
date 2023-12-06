@@ -46,6 +46,15 @@ export default function Menu() {
           <Link href="/">
             <Text _hover={{ color: "#e88700" }}>Home</Text>
           </Link>
+          <Link href="/UturuTemp">
+            <Text
+              fontFamily="japanese1"
+              whiteSpace="nowrap"
+              _hover={{ color: "#e88700" }}
+            >
+              特設ページ - uturu
+            </Text>
+          </Link>
           <Link href="/About">
             <Text _hover={{ color: "#e88700" }}>About</Text>
           </Link>

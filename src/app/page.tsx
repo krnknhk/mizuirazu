@@ -184,11 +184,11 @@ export default function Home() {
               justifyContent="center"
               onClick={handleMenuClick}
             >
-              {/* <Link href="/UturuTemp">
+              <Link href="/UturuTemp">
                 <Text fontFamily="japanese1" _hover={{ color: "#e88700" }}>
-                  uturu特設ページ
+                  特設ページ - uturu
                 </Text>
-              </Link> */}
+              </Link>
               <Link href="/About">
                 <Text _hover={{ color: "#e88700" }}>About</Text>
               </Link>
@@ -283,11 +283,11 @@ export default function Home() {
                 textShadow="2px 2px 4px rgba(0, 0, 0, 0.5)"
                 fontFamily={"english"}
               >
-                {/* <Link href="/UturuTemp">
-                  <Text fontFamily="japanese1" _hover={{ color: "#e88700" }}>
-                    uturu特設ページ
+                <Link href="/UturuTemp">
+                  <Text fontFamily="japanes1" _hover={{ color: "#e88700" }}>
+                    特設ページ - uturu
                   </Text>
-                </Link> */}
+                </Link>
                 <Link href="/About">
                   <Text _hover={{ color: "#e88700" }}>About</Text>
                 </Link>
