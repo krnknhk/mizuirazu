@@ -132,6 +132,18 @@ export default function UturuTemp() {
                     width="100%"
                     mt={1}
                   />
+                  <Link href="https://ultravybe.lnk.to/uturu">
+                    <Box mt={5}>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="bold"
+                        fontFamily="japanese"
+                        color={"#55499b"}
+                      >
+                        各種リンク
+                      </Text>
+                    </Box>
+                  </Link>
                   <Box mt={10}>
                     <Text
                       fontSize="16px"
@@ -388,7 +400,19 @@ export default function UturuTemp() {
                     width="100%"
                     mt={1}
                   />
-                  <Box mt={20}>
+                  <Link href="https://ultravybe.lnk.to/uturu">
+                    <Box mt={5}>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="bold"
+                        fontFamily="japanese"
+                        color={"#55499b"}
+                      >
+                        各種リンク
+                      </Text>
+                    </Box>
+                  </Link>
+                  <Box mt={10}>
                     <Text
                       fontSize="16px"
                       fontWeight="bold"
