@@ -64,7 +64,7 @@ export default function Home() {
 
   const handleTitleClick = (e: React.MouseEvent) => {
     e.stopPropagation(); // イベント伝播を止める
-    if (!isClickable) return;
+    // if (!isClickable) return;
 
     stops.forEach((stop) => stop());
     play4();
