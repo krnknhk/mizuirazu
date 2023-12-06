@@ -23,7 +23,7 @@ import {
 import "../../style.css";
 import { mediaQuery, useMediaQuery } from "../../useMediaQuery";
 
-export default function Discography() {
+export default function Uturu() {
   const isSp = useMediaQuery(mediaQuery.sp);
   const isPc = useMediaQuery(mediaQuery.pc);
 
