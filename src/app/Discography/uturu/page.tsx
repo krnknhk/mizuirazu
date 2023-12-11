@@ -74,7 +74,7 @@ export default function Uturu() {
                 <GridItem colSpan={2}>
                   <AspectRatio ratio={1}>
                     <Box
-                      backgroundImage="url('/uturu.png')"
+                      backgroundImage="url('/uturu.jpg')"
                       backgroundRepeat="no-repeat"
                       backgroundSize="cover"
                       boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
@@ -254,7 +254,7 @@ export default function Uturu() {
                 <GridItem colSpan={6}>
                   <AspectRatio ratio={1}>
                     <Box
-                      backgroundImage="url('/uturu.png')"
+                      backgroundImage="url('/uturu.jpg')"
                       backgroundRepeat="no-repeat"
                       backgroundSize="cover"
                       boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"

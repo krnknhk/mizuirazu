@@ -21,7 +21,7 @@ export default function Home() {
   const soundFiles = ["/uturu_edit.mp3", "/sumu_edit.mp3", "/bakeru_edit.mp3"];
   const [currentSound, setCurrentSound] = useState(0);
   const [currentJpg, setCurrentJpg] = useState(0);
-  const [currentBackground, setCurrentBackground] = useState("/uturu2.png");
+  const [currentBackground, setCurrentBackground] = useState("/uturu.jpg");
   const [isClickable, setIsClickable] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true);
@@ -101,7 +101,7 @@ export default function Home() {
       "/20210828_6.jpg",
       "/20210828_9.jpg",
       "/20210828_50.jpg",
-      "/uturu2.png",
+      "/uturu.jpg",
     ];
 
     const preloadImages = () => {
