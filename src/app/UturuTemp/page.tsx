@@ -225,7 +225,7 @@ export default function UturuTemp() {
                   </Box>
                 </GridItem>
 
-                <GridItem colSpan={2} mt={5}>
+                <GridItem colSpan={2} mt={10}>
                   <Accordion allowMultiple>
                     <AccordionItem>
                       <AccordionButton>
@@ -247,7 +247,7 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          東京を拠点に活動する4人組バンド、水いらずがニュー・シングル「uturu」を
+                          　東京を拠点に活動する4人組バンド、水いらずがニュー・シングル「uturu」を
                           2023 年 12 月 6 日にリリースする。
                         </Text>
                         <Text
@@ -255,7 +255,7 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          前作シングル「bakeru」から1年ぶりとなる本作は、日本語の擬音語や擬態語をテーマに制作された楽曲となっている。
+                          　前作シングル「bakeru」から1年ぶりとなる本作は、日本語の擬音語や擬態語をテーマに制作された楽曲となっている。
                           メンバー4人に加え、ライヴ・サポートを務める廣瀬謙介(gt)、山田宏也(エンヤコーラーズ/dr,per)、さらにはゲスト・ミュージシャンとして浮(vo)、下田開登(ex
                           picnic you、跡地/ rap)、マーティ・ホロベック(bass
                           solo)とのコラボレーションも果たした本作は、バンドという形態に捉われない編成で奏でられた、幾多のトラックがひしめき合う大曲。
@@ -265,14 +265,15 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          1年をかけてじっくりと作り上げたこの作品で、近年取り組んできた日本民謡やインドネシアのケチャをはじめとするアジアの民族音楽をバンド・サウンドに還元するアプローチを加速させるとともに、交響曲のように入り込んだ編曲と展開の妙を前作以上に突き詰めることで、日本語ポップ・ミュージックの極地を提示してみせた。
+                          　1年をかけてじっくりと作り上げたこの作品で、近年取り組んできた日本民謡やインドネシアのケチャをはじめとするアジアの民族音楽をバンド・サウンドに還元するアプローチを加速させるとともに、交響曲のように入り込んだ編曲と展開の妙を前作以上に突き詰めることで、日本語ポップ・ミュージックの極地を提示してみせた。
                         </Text>
                         <Text
                           fontSize="15px"
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          また「uturu」ではバンド初となるDolby Atmos、360Reality
+                          　また「uturu」ではバンド初となるDolby
+                          Atmos、360Reality
                           Audioでの音源制作も実現。“擬音語や擬態語”をコンセプトに掲げ、「ザーザー」「ポタポタ」「ドキドキ」などといった声のサンプルがちりばめられている本曲では、立体感や没入感のある“空間音響”を用いた表現を念頭にしてアレンジが進められている。
                         </Text>
                         <Text
@@ -280,7 +281,7 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          レコーディング/ミックス・エンジニアは、数々のアーティスト作品や、劇伴、CM楽曲、海外映画の日本語ローカライズ版音声ミックスなどを手がけ、イマーシブ・オーディオにも意欲的に取り組む米津裕二郎が担当。楽曲の世界観を体現する印象的なアートワークは、羽生まゐごのMV
+                          　レコーディング/ミックス・エンジニアは、数々のアーティスト作品や、劇伴、CM楽曲、海外映画の日本語ローカライズ版音声ミックスなどを手がけ、イマーシブ・オーディオにも意欲的に取り組む米津裕二郎が担当。楽曲の世界観を体現する印象的なアートワークは、羽生まゐごのMV
                           やアニメ『FLCL:
                           Shoegaze』のED監督を務めた気鋭の漫画家/アニメーター・内田晟による
                           描き下ろし作品となっている。
@@ -297,7 +298,7 @@ export default function UturuTemp() {
                     fontFamily="japanese2"
                     textColor="#55499b"
                   >
-                    レビュー
+                    楽曲レビュー
                   </Text>
                   <Box
                     height="1px"
@@ -327,7 +328,7 @@ export default function UturuTemp() {
                     fontFamily="japanese2"
                     textColor="#55499b"
                   >
-                    コメント
+                    推薦コメント
                   </Text>
                   <Box
                     height="1px"
@@ -642,7 +643,7 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          東京を拠点に活動する4人組バンド、水いらずがニュー・シングル「uturu」を
+                          　東京を拠点に活動する4人組バンド、水いらずがニュー・シングル「uturu」を
                           2023 年 12 月 6 日にリリースする。
                         </Text>
                         <Text
@@ -650,7 +651,7 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          前作シングル「bakeru」から1年ぶりとなる本作は、日本語の擬音語や擬態語をテーマに制作された楽曲となっている。
+                          　前作シングル「bakeru」から1年ぶりとなる本作は、日本語の擬音語や擬態語をテーマに制作された楽曲となっている。
                           メンバー4人に加え、ライヴ・サポートを務める廣瀬謙介(gt)、山田宏也(エンヤコーラーズ/dr,per)、さらにはゲスト・ミュージシャンとして浮(vo)、下田開登(ex
                           picnic you、跡地/ rap)、マーティ・ホロベック(bass
                           solo)とのコラボレーションも果たした本作は、バンドという形態に捉われない編成で奏でられた、幾多のトラックがひしめき合う大曲。
@@ -660,14 +661,15 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          1年をかけてじっくりと作り上げたこの作品で、近年取り組んできた日本民謡やインドネシアのケチャをはじめとするアジアの民族音楽をバンド・サウンドに還元するアプローチを加速させるとともに、交響曲のように入り込んだ編曲と展開の妙を前作以上に突き詰めることで、日本語ポップ・ミュージックの極地を提示してみせた。
+                          　1年をかけてじっくりと作り上げたこの作品で、近年取り組んできた日本民謡やインドネシアのケチャをはじめとするアジアの民族音楽をバンド・サウンドに還元するアプローチを加速させるとともに、交響曲のように入り込んだ編曲と展開の妙を前作以上に突き詰めることで、日本語ポップ・ミュージックの極地を提示してみせた。
                         </Text>
                         <Text
                           fontSize="15px"
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          また「uturu」ではバンド初となるDolby Atmos、360Reality
+                          　また「uturu」ではバンド初となるDolby
+                          Atmos、360Reality
                           Audioでの音源制作も実現。“擬音語や擬態語”をコンセプトに掲げ、「ザーザー」「ポタポタ」「ドキドキ」などといった声のサンプルがちりばめられている本曲では、立体感や没入感のある“空間音響”を用いた表現を念頭にしてアレンジが進められている。
                         </Text>
                         <Text
@@ -675,7 +677,7 @@ export default function UturuTemp() {
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
-                          レコーディング/ミックス・エンジニアは、数々のアーティスト作品や、劇伴、CM楽曲、海外映画の日本語ローカライズ版音声ミックスなどを手がけ、イマーシブ・オーディオにも意欲的に取り組む米津裕二郎が担当。楽曲の世界観を体現する印象的なアートワークは、羽生まゐごのMV
+                          　レコーディング/ミックス・エンジニアは、数々のアーティスト作品や、劇伴、CM楽曲、海外映画の日本語ローカライズ版音声ミックスなどを手がけ、イマーシブ・オーディオにも意欲的に取り組む米津裕二郎が担当。楽曲の世界観を体現する印象的なアートワークは、羽生まゐごのMV
                           やアニメ『FLCL:
                           Shoegaze』のED監督を務めた気鋭の漫画家/アニメーター・内田晟による
                           描き下ろし作品となっている。
@@ -692,7 +694,7 @@ export default function UturuTemp() {
                     fontFamily="japanese2"
                     textColor="#55499b"
                   >
-                    レビュー
+                    楽曲レビュー
                   </Text>
                   <Box
                     height="1px"
@@ -722,7 +724,7 @@ export default function UturuTemp() {
                     fontFamily="japanese2"
                     textColor="#55499b"
                   >
-                    コメント
+                    推薦コメント
                   </Text>
                   <Box
                     height="1px"
