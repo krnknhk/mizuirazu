@@ -290,23 +290,39 @@ export default function UturuTemp() {
                   </Accordion>
                 </GridItem>
 
-                <Box mt={3}>
-                  <Link href="/ReviewHiwatt">
-                    <Text
-                      fontSize="18px"
-                      fontWeight="bold"
-                      fontFamily="japanese2"
-                      textColor="#55499b"
-                      style={{ whiteSpace: "nowrap" }}
-                    >
-                      ▫️レビュー by Hiwatt
-                    </Text>
-                  </Link>
-                </Box>
+                <GridItem colSpan={2} mt={5}>
+                  <Text
+                    fontSize="18px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    textColor="#55499b"
+                  >
+                    レビュー
+                  </Text>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={3}
+                  />
+                  <Box mt={3}>
+                    <Link href="/ReviewHiwatt">
+                      <Text
+                        fontSize="18px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        textColor="#55499b"
+                        style={{ whiteSpace: "nowrap" }}
+                      >
+                        ▫️by Hiwatt
+                      </Text>
+                    </Link>
+                  </Box>
+                </GridItem>
 
                 <GridItem colSpan={2} mt={5}>
                   <Text
-                    fontSize="20px"
+                    fontSize="18px"
                     fontWeight="bold"
                     fontFamily="japanese2"
                     textColor="#55499b"
