@@ -291,7 +291,7 @@ export default function UturuTemp() {
                   </Accordion>
                 </GridItem>
 
-                <GridItem colSpan={2} mt={5}>
+                <GridItem colSpan={2} mt={10}>
                   <Text
                     fontSize="18px"
                     fontWeight="bold"
@@ -321,7 +321,7 @@ export default function UturuTemp() {
                   </Box>
                 </GridItem>
 
-                <GridItem colSpan={2} mt={5}>
+                <GridItem colSpan={2} mt={10}>
                   <Text
                     fontSize="18px"
                     fontWeight="bold"
