@@ -243,7 +243,7 @@ export default function UturuTemp() {
                       </AccordionButton>
                       <AccordionPanel pb={3}>
                         <Text
-                          fontSize="15px"
+                          fontSize="14px"
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
@@ -251,7 +251,7 @@ export default function UturuTemp() {
                           2023 年 12 月 6 日にリリースする。
                         </Text>
                         <Text
-                          fontSize="15px"
+                          fontSize="14px"
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
@@ -261,14 +261,14 @@ export default function UturuTemp() {
                           solo)とのコラボレーションも果たした本作は、バンドという形態に捉われない編成で奏でられた、幾多のトラックがひしめき合う大曲。
                         </Text>
                         <Text
-                          fontSize="15px"
+                          fontSize="14px"
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
                           　1年をかけてじっくりと作り上げたこの作品で、近年取り組んできた日本民謡やインドネシアのケチャをはじめとするアジアの民族音楽をバンド・サウンドに還元するアプローチを加速させるとともに、交響曲のように入り込んだ編曲と展開の妙を前作以上に突き詰めることで、日本語ポップ・ミュージックの極地を提示してみせた。
                         </Text>
                         <Text
-                          fontSize="15px"
+                          fontSize="14px"
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
@@ -277,7 +277,7 @@ export default function UturuTemp() {
                           Audioでの音源制作も実現。“擬音語や擬態語”をコンセプトに掲げ、「ザーザー」「ポタポタ」「ドキドキ」などといった声のサンプルがちりばめられている本曲では、立体感や没入感のある“空間音響”を用いた表現を念頭にしてアレンジが進められている。
                         </Text>
                         <Text
-                          fontSize="15px"
+                          fontSize="14px"
                           fontWeight="bold"
                           fontFamily="japanese2"
                         >
