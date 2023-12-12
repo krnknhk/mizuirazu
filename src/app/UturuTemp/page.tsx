@@ -60,7 +60,7 @@ export default function UturuTemp() {
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbItem isCurrentPage>
-                  <BreadcrumbLink href="#" fontFamily="japanese">
+                  <BreadcrumbLink href="#" fontFamily="english">
                     特設ページ - uturu
                   </BreadcrumbLink>
                 </BreadcrumbItem>
@@ -140,12 +140,26 @@ export default function UturuTemp() {
                   <Link href="https://ultravybe.lnk.to/uturu">
                     <Box mt={5}>
                       <Text
-                        fontSize="16px"
+                        fontSize="15px"
                         fontWeight="bold"
                         fontFamily="japanese"
                         color={"#55499b"}
+                        as="u"
                       >
                         各種リンク
+                      </Text>
+                    </Box>
+                  </Link>
+                  <Link href="/Lyrics">
+                    <Box mt={3}>
+                      <Text
+                        fontSize="15px"
+                        fontWeight="bold"
+                        fontFamily="japanese"
+                        color={"#55499b"}
+                        as="u"
+                      >
+                        歌詞を見る
                       </Text>
                     </Box>
                   </Link>
@@ -627,7 +641,7 @@ export default function UturuTemp() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href="#" fontFamily="japanese">
+                <BreadcrumbLink href="#" fontFamily="english">
                   特設ページ - uturu
                 </BreadcrumbLink>
               </BreadcrumbItem>
