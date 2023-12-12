@@ -197,7 +197,7 @@ export default function UturuTemp() {
                       fontWeight="bold"
                       fontFamily="japanese"
                     >
-                      下田開登(ex picnic you、跡地/rap)
+                      下田開登(ex PICNIC YOU、跡地/rap)
                     </Text>
                   </Box>
                   <Box mt={5}>
@@ -269,7 +269,7 @@ export default function UturuTemp() {
                   >
                     　前作シングル「bakeru」から1年ぶりとなる本作は、日本語の擬音語や擬態語をテーマに制作された楽曲となっている。
                     メンバー4人に加え、ライヴ・サポートを務める廣瀬謙介(gt)、山田宏也(エンヤコーラーズ/dr,per)、さらにはゲスト・ミュージシャンとして浮(vo)、下田開登(ex
-                    picnic you、跡地/ rap)、マーティ・ホロベック(bass
+                    PICNIC YOU、跡地/ rap)、マーティ・ホロベック(bass
                     solo)とのコラボレーションも果たした本作は、バンドという形態に捉われない編成で奏でられた、幾多のトラックがひしめき合う大曲。
                   </Text>
                   <Text
@@ -762,7 +762,7 @@ export default function UturuTemp() {
                       fontWeight="bold"
                       fontFamily="japanese"
                     >
-                      下田開登(ex picnic you、跡地/rap)
+                      下田開登(ex PICNIC YOU、跡地/rap)
                     </Text>
                   </Box>
                   <Box mt={5}>
@@ -836,7 +836,7 @@ export default function UturuTemp() {
                         >
                           　前作シングル「bakeru」から1年ぶりとなる本作は、日本語の擬音語や擬態語をテーマに制作された楽曲となっている。
                           メンバー4人に加え、ライヴ・サポートを務める廣瀬謙介(gt)、山田宏也(エンヤコーラーズ/dr,per)、さらにはゲスト・ミュージシャンとして浮(vo)、下田開登(ex
-                          picnic you、跡地/ rap)、マーティ・ホロベック(bass
+                          PICNIC YOU、跡地/ rap)、マーティ・ホロベック(bass
                           solo)とのコラボレーションも果たした本作は、バンドという形態に捉われない編成で奏でられた、幾多のトラックがひしめき合う大曲。
                         </Text>
                         <Text

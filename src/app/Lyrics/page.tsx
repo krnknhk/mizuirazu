@@ -133,7 +133,7 @@ export default function Lyrics() {
                       {"< Bメロ >"}
                     </Text>
                     <Text fontSize="15px" fontFamily="japanese2" mt={5}>
-                      {"< ラップ >"}
+                      {"< ラップ：下田開登 >"}
                     </Text>
                     <Text fontSize="14px" fontFamily="japanese2" mt={1}>
                       いつもごめんなさい
