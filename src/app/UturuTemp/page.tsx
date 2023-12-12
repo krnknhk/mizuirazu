@@ -481,7 +481,7 @@ export default function UturuTemp() {
                       textColor="#55499b"
                       mt={7}
                     >
-                      制作過程で作成したマインドマップ
+                      楽曲制作過程で作成したマインドマップ
                     </Text>
                     <AspectRatio ratio={3 / 2}>
                       <Box
@@ -576,6 +576,31 @@ export default function UturuTemp() {
                     <Text fontSize="14px" fontFamily="japanese2" mt={1}>
                       　好きという気持ち。一緒にいたいという気持ち。そんなことは起こらず、死ぬ。上述の通り、人間の一回の人生を描くために、最後死ぬという結論にした。
                     </Text>
+                  </Box>
+                </GridItem>
+
+                <GridItem colSpan={2} mt={10}>
+                  <VStack>
+                    <Text
+                      fontSize="16px"
+                      fontFamily="japanese2"
+                      textColor="#55499b"
+                      as="u"
+                    >
+                      影響を受けた楽曲プレイリスト
+                    </Text>
+                    <Text fontSize="14px" fontFamily="japanese2">
+                      ※随時更新中!
+                    </Text>
+                  </VStack>
+                  <Box mt={3}>
+                    <iframe
+                      src="https://open.spotify.com/embed/playlist/3obWZr6BRpeiVh0ZP5kVam?utm_source=generator"
+                      width="100%"
+                      height="352"
+                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                      loading="lazy"
+                    ></iframe>
                   </Box>
                 </GridItem>
               </Grid>
