@@ -474,6 +474,23 @@ export default function UturuTemp() {
                       11月頃だったと思う。
                       前作シングル「bakeru」を作っている頃から、擬態語をテーマにした楽曲を制作したいという気持ちがあった。それはいくつかの観点からである。
                     </Text>
+
+                    <Text
+                      fontSize="14px"
+                      fontFamily="japanese2"
+                      textColor="#55499b"
+                      mt={7}
+                    >
+                      制作過程で作成したマインドマップ
+                    </Text>
+                    <AspectRatio ratio={3 / 2}>
+                      <Box
+                        backgroundImage="url('/mindmap.jpg')"
+                        backgroundRepeat="no-repeat"
+                        backgroundSize="cover"
+                      />
+                    </AspectRatio>
+
                     <Text fontSize="15px" fontFamily="japanese2" mt={7}>
                       1. 言語と音楽の関係
                     </Text>
