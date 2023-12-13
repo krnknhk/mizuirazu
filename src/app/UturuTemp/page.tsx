@@ -21,7 +21,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import { AiFillAmazonSquare } from "react-icons/ai";
 import { FaSpotify } from "react-icons/fa6";
+import { SiApplemusic } from "react-icons/si";
 import "../style.css";
 import { mediaQuery, useMediaQuery } from "../useMediaQuery";
 
@@ -119,6 +121,16 @@ export default function UturuTemp() {
                         uturu
                       </Text>
                       <Spacer />
+                      <Link href="https://www.amazon.co.jp/dp/B0CNSMRVKN?tag=linkfiregen&ie=UTF8&linkCode=as2&ascsubtag=e68b42def3ff0ca98787df672838927d&ref=dmm_acq_soc_jp_u_lfire_lp_x_e68b42def3ff0ca98787df672838927d">
+                        <Box color="#00d3db">
+                          <AiFillAmazonSquare size={25} />
+                        </Box>
+                      </Link>
+                      <Link href="https://music.apple.com/jp/album/uturu-single/1717705523">
+                        <Box color="#f25218">
+                          <SiApplemusic size={20} />
+                        </Box>
+                      </Link>
                       <Link href="https://open.spotify.com/intl-ja/track/37s2uTq6xvtMGtmwdUsZuj?si=352ef57e31514f65">
                         <Box color="#3bd300">
                           <FaSpotify size={20} />
@@ -714,6 +726,16 @@ export default function UturuTemp() {
                         uturu
                       </Text>
                       <Spacer />
+                      <Link href="https://www.amazon.co.jp/dp/B0CNSMRVKN?tag=linkfiregen&ie=UTF8&linkCode=as2&ascsubtag=e68b42def3ff0ca98787df672838927d&ref=dmm_acq_soc_jp_u_lfire_lp_x_e68b42def3ff0ca98787df672838927d">
+                        <Box color="#00d3db">
+                          <AiFillAmazonSquare size={25} />
+                        </Box>
+                      </Link>
+                      <Link href="https://music.apple.com/jp/album/uturu-single/1717705523">
+                        <Box color="#f25218">
+                          <SiApplemusic size={20} />
+                        </Box>
+                      </Link>
                       <Link href="https://open.spotify.com/intl-ja/track/37s2uTq6xvtMGtmwdUsZuj?si=352ef57e31514f65">
                         <Box color="#3bd300">
                           <FaSpotify size={20} />
