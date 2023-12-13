@@ -126,7 +126,7 @@ export default function Lyrics() {
                       形が 移り行き、フィルムに、うつしよは
                     </Text>
                     <Text fontSize="14px" fontFamily="japanese2" mt={1}>
-                      光が はじまりは背後から(来る)
+                      光が はじまりは背後から(来る、来る)
                     </Text>
                     <Text fontSize="15px" fontFamily="japanese2" mt={5}>
                       {"< Bメロ >"}
@@ -249,7 +249,7 @@ export default function Lyrics() {
                       いつまでも変わらないまま、ここに今いて欲しい。
                     </Text>
                     <Text fontSize="14px" fontFamily="japanese2" mt={1}>
-                      いつまでも変わらないまた、いてね、いてね。
+                      いつまでも変わらないまま、いてね、いてね。
                     </Text>
                   </Box>
                   <Box
@@ -359,7 +359,7 @@ export default function Lyrics() {
                           形が 移り行き、フィルムに、うつしよは
                         </Text>
                         <Text fontSize="14px" fontFamily="japanese2" mt={1}>
-                          光が はじまりは背後から(来る)
+                          光が はじまりは背後から(来る、来る)
                         </Text>
                         <Text fontSize="15px" fontFamily="japanese2" mt={5}>
                           {"< Bメロ >"}
@@ -482,7 +482,7 @@ export default function Lyrics() {
                           いつまでも変わらないまま、ここに今いて欲しい。
                         </Text>
                         <Text fontSize="14px" fontFamily="japanese2" mt={1}>
-                          いつまでも変わらないまた、いてね、いてね。
+                          いつまでも変わらないまま、いてね、いてね。
                         </Text>
                       </Box>
                     </Flex>

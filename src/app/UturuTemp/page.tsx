@@ -247,15 +247,15 @@ export default function UturuTemp() {
                     height="1px"
                     backgroundColor="gray.300"
                     width="100%"
-                    my={3}
+                    my={5}
                   />
                   <Text
                     fontSize="14px"
                     fontWeight="bold"
                     fontFamily="japanese2"
                   >
-                    　東京を拠点に活動する4人組バンド、水いらずがニュー・シングル「uturu」を
-                    2023 年 12 月 6 日にリリースする。
+                    　東京を拠点に活動する4人組バンド、水いらずがニュー・シングル「uturu」を2023
+                    年 12 月 6 日にリリースする。
                   </Text>
                   <Text
                     fontSize="14px"
@@ -290,7 +290,23 @@ export default function UturuTemp() {
                     　レコーディング/ミックス・エンジニアは、数々のアーティスト作品や、劇伴、CM楽曲、海外映画の日本語ローカライズ版音声ミックスなどを手がけ、イマーシブ・オーディオにも意欲的に取り組む米津裕二郎が担当。楽曲の世界観を体現する印象的なアートワークは、羽生まゐごのMV
                     やアニメ『FLCL:
                     Shoegaze』のED監督を務めた気鋭の漫画家/アニメーター・内田晟による
-                    描き下ろし作品となっている。
+                    描き下ろし作品となっている。（プレスリリースより）
+                  </Text>
+                  <Text
+                    fontSize="15px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    mt={7}
+                  >
+                    水いらず 井上真（vo,gt）のコメント
+                  </Text>
+                  <Text
+                    fontSize="14px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    mt={1}
+                  >
+                    　「ここ一年、「uturu」のことばかりを考えてきました。この曲では主観を切り離し、コンセプトをできるだけ構造的に表現しようと意識してましたが、結果的にメンバーそれぞれの実存というべきか、1年間感じたことや考えたことが多分に反映された作品となってしまいました。今振り返ってみるとこれで良かったと思っています。この楽曲が皆さんの血肉となることを祈っております。」
                   </Text>
                 </GridItem>
 
@@ -872,7 +888,23 @@ export default function UturuTemp() {
                     　レコーディング/ミックス・エンジニアは、数々のアーティスト作品や、劇伴、CM楽曲、海外映画の日本語ローカライズ版音声ミックスなどを手がけ、イマーシブ・オーディオにも意欲的に取り組む米津裕二郎が担当。楽曲の世界観を体現する印象的なアートワークは、羽生まゐごのMV
                     やアニメ『FLCL:
                     Shoegaze』のED監督を務めた気鋭の漫画家/アニメーター・内田晟による
-                    描き下ろし作品となっている。
+                    描き下ろし作品となっている。（プレスリリースより）
+                  </Text>
+                  <Text
+                    fontSize="16px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    mt={7}
+                  >
+                    水いらず 井上真（vo,gt）のコメント
+                  </Text>
+                  <Text
+                    fontSize="15px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    mt={1}
+                  >
+                    　「ここ一年、「uturu」のことばかりを考えてきました。この曲では主観を切り離し、コンセプトをできるだけ構造的に表現しようと意識してましたが、結果的にメンバーそれぞれの実存というべきか、1年間感じたことや考えたことが多分に反映された作品となってしまいました。今振り返ってみるとこれで良かったと思っています。この楽曲が皆さんの血肉となることを祈っております。」
                   </Text>
                 </GridItem>
 
