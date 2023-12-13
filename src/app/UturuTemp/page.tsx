@@ -457,14 +457,27 @@ export default function UturuTemp() {
                     mt={3}
                   />
                   <Box mt={3}>
-                    <Text
-                      fontSize="18px"
-                      fontWeight="bold"
-                      fontFamily="japanese2"
-                      style={{ whiteSpace: "nowrap" }}
-                    >
-                      ▫️by Hiwatt
-                    </Text>
+                    <HStack>
+                      <Text
+                        fontSize="18px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        style={{ whiteSpace: "nowrap" }}
+                      >
+                        ▫️by Hiwatt
+                      </Text>
+                      <Spacer />
+                      <Link href="https://twitter.com/kalopsia___3">
+                        <Text
+                          fontSize="16px"
+                          fontWeight="bold"
+                          fontFamily="japanese2"
+                          textColor="#55499b"
+                        >
+                          @kalopsia___3
+                        </Text>
+                      </Link>
+                    </HStack>
                     <Text fontSize="14px" fontFamily="japanese2" mt={3}>
                       　音楽を語る上で、その作家が暮らす街や都市を背景に語ることは一般的であるし、逆に言えば音楽こそがその街を最も鮮明に映し出す。
                       その中でも、市井の人であるインディ・ミュージシャンの作り出す音楽
@@ -1130,14 +1143,27 @@ export default function UturuTemp() {
                     mt={3}
                   />
                   <Box mt={3}>
-                    <Text
-                      fontSize="18px"
-                      fontWeight="bold"
-                      fontFamily="japanese2"
-                      style={{ whiteSpace: "nowrap" }}
-                    >
-                      ▫️by Hiwatt
-                    </Text>
+                    <HStack>
+                      <Text
+                        fontSize="18px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        style={{ whiteSpace: "nowrap" }}
+                      >
+                        ▫️by Hiwatt
+                      </Text>
+                      <Spacer />
+                      <Link href="https://twitter.com/kalopsia___3">
+                        <Text
+                          fontSize="16px"
+                          fontWeight="bold"
+                          fontFamily="japanese2"
+                          textColor="#55499b"
+                        >
+                          @kalopsia___3
+                        </Text>
+                      </Link>
+                    </HStack>
                     <Text fontSize="14px" fontFamily="japanese2" mt={3}>
                       　音楽を語る上で、その作家が暮らす街や都市を背景に語ることは一般的であるし、逆に言えば音楽こそがその街を最も鮮明に映し出す。
                       その中でも、市井の人であるインディ・ミュージシャンの作り出す音楽
