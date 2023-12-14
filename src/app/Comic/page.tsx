@@ -14,8 +14,6 @@ import {
   Flex,
   Grid,
   GridItem,
-  HStack,
-  Spacer,
   Spinner,
   Text,
   VStack,
@@ -73,14 +71,27 @@ export default function Comic() {
             <Box width="100vw" backgroundColor="#f4f4ed" mt="100px">
               <Grid templateColumns="repeat(2, 1fr)" gap={5} m={8}>
                 <GridItem colSpan={2}>
-                  <Text
-                    fontSize="16px"
-                    fontWeight="bold"
-                    fontFamily="japanese2"
-                    textColor="#55499b"
-                  >
-                    作：内田晟
-                  </Text>
+                  <Center>
+                    <VStack>
+                      <Text
+                        fontSize="18px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        textColor="#55499b"
+                      >
+                        漫画「uturu」
+                      </Text>
+                      <Text
+                        fontSize="14px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        textColor="#55499b"
+                        mt={1}
+                      >
+                        作：内田晟
+                      </Text>
+                    </VStack>
+                  </Center>
                   <Box
                     height="1px"
                     backgroundColor="gray.300"
@@ -200,7 +211,7 @@ export default function Comic() {
       <>
         <Flex
           direction="column"
-          background="linear-gradient(to bottom, #55499b 30%, #dce0f2 30%, #e8e8e8)"
+          background="linear-gradient(to bottom, #55499b 100%, #e8e8e8)"
           minH="100vh"
         >
           <Menu></Menu>
@@ -227,147 +238,136 @@ export default function Comic() {
             <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
           </Box>
           <Center>
-            <Box width="80%" minH="70vh" backgroundColor="#f4f4ed" mt={"10vh"}>
+            <Box width="70%" minH="70vh" backgroundColor="#f4f4ed" mt={"10vh"}>
               <Grid templateColumns="repeat(12, 1fr)" gap={20} m={10}>
-                <GridItem colSpan={6}>
-                  <AspectRatio ratio={1}>
-                    <Box
-                      backgroundImage="url('/uturu.jpg')"
-                      backgroundRepeat="no-repeat"
-                      backgroundSize="cover"
-                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-                    />
-                  </AspectRatio>
-                </GridItem>
-
-                <GridItem colSpan={6}>
-                  <Text fontSize="30px" fontWeight="bold" fontFamily="english">
-                    uturu
-                  </Text>
-                  <Box mt={2}>
-                    <Text fontSize="16px" fontFamily="english">
-                      Digital Single - 2023.12.6
-                    </Text>
-                  </Box>
-                  <Box mt={7}>
-                    <Text
-                      fontSize="16px"
-                      fontFamily="english"
-                      color={"#55499b"}
-                    >
-                      TRACKLISTING
-                    </Text>
-                  </Box>
+                <GridItem colStart={3} colSpan={8}>
+                  <Center>
+                    <VStack>
+                      <Text
+                        fontSize="20px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        textColor="#55499b"
+                      >
+                        漫画「uturu」
+                      </Text>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        textColor="#55499b"
+                        mt={1}
+                      >
+                        作：内田晟
+                      </Text>
+                    </VStack>
+                  </Center>
                   <Box
                     height="1px"
                     backgroundColor="gray.300"
                     width="100%"
                     mt={3}
                   />
-                  <Box mt={1} ml={1}>
-                    <HStack>
-                      <Text
-                        fontSize="16px"
-                        fontWeight="bold"
-                        fontFamily="english2"
-                      >
-                        1　
-                      </Text>
-                      <Text
-                        fontSize="16px"
-                        fontWeight="500"
-                        fontFamily="english"
-                      >
-                        uturu
-                      </Text>
-                      <Spacer />
-                      {/* <Link href="https://open.spotify.com/intl-ja/track/1jYHKwsWxnWQnhp9vgpv4p?si=237afaaa5a5a4964">
-                    <Box color="#3bd300">
-                      <FaSpotify size={20} />
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga1.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga2.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga3.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga4.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga5.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga6.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga7.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga8.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga9.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga10.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                      mt={5}
+                    />
+                  </AspectRatio>
+                  <Center>
+                    <Box mt={10}>
+                      <iframe
+                        allow="autoplay *; encrypted-media *;"
+                        height="450"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                        src="https://embed.music.apple.com/jp/album/uturu-single/1717705523"
+                      ></iframe>
                     </Box>
-                  </Link> */}
-                    </HStack>
-                  </Box>
-                  <Box
-                    height="1px"
-                    backgroundColor="gray.300"
-                    width="100%"
-                    mt={1}
-                  />
-                  <Box mt={20}>
-                    <Text
-                      fontSize="16px"
-                      fontWeight="bold"
-                      fontFamily="english"
-                      as="u"
-                    >
-                      Guest Musicians
-                    </Text>
-                  </Box>
-                  <Box mt={2}>
-                    <Text
-                      fontSize="14px"
-                      fontWeight="bold"
-                      fontFamily="japanese"
-                    >
-                      米山ミサ(浮/ vo)
-                    </Text>
-                  </Box>
-                  <Box mt={2}>
-                    <Text
-                      fontSize="14px"
-                      fontWeight="bold"
-                      fontFamily="japanese"
-                    >
-                      マーティ・ホロベック(bass solo)
-                    </Text>
-                  </Box>
-                  <Box mt={2}>
-                    <Text
-                      fontSize="14px"
-                      fontWeight="bold"
-                      fontFamily="japanese"
-                    >
-                      下田開登(PICNIC YOU/rap)
-                    </Text>
-                  </Box>
-                  <Box mt={5}>
-                    <Text
-                      fontSize="16px"
-                      fontWeight="bold"
-                      fontFamily="english"
-                      as="u"
-                    >
-                      Recording
-                    </Text>
-                  </Box>
-                  <Box mt={2}>
-                    <Text
-                      fontSize="14px"
-                      fontWeight="bold"
-                      fontFamily="japanese"
-                    >
-                      米津裕二郎(Recording, Mix and Mastering)
-                    </Text>
-                  </Box>
-                  <Box mt={2}>
-                    <Text
-                      fontSize="14px"
-                      fontWeight="bold"
-                      fontFamily="japanese"
-                    >
-                      Recorded at Sound-m Studio(WAREHOUSE TRACKS)
-                    </Text>
-                  </Box>
-                  <Box mt={2}>
-                    <Text
-                      fontSize="14px"
-                      fontWeight="bold"
-                      fontFamily="japanese"
-                    >
-                      Mixed at STUDIO TORCH
-                    </Text>
-                  </Box>
+                  </Center>
                 </GridItem>
               </Grid>
             </Box>

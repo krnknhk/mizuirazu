@@ -313,10 +313,26 @@ export default function UturuTemp() {
                     fontSize="15px"
                     fontWeight="bold"
                     fontFamily="japanese2"
-                    textColor="#55499b"
                     mt={7}
                   >
-                    「uturu」をイメージ元とした漫画
+                    水いらず 井上真（vo,gt）のコメント
+                  </Text>
+                  <Text
+                    fontSize="14px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    mt={1}
+                  >
+                    　「ここ一年、「uturu」のことばかりを考えてきました。この曲では主観を切り離し、コンセプトをできるだけ構造的に表現しようと意識してましたが、結果的にメンバーそれぞれの実存というべきか、1年間感じたことや考えたことが多分に反映された作品となってしまいました。今振り返ってみるとこれで良かったと思っています。この楽曲が皆さんの血肉となることを祈っております。」
+                  </Text>
+                  <Text
+                    fontSize="16px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    textColor="#55499b"
+                    mt={10}
+                  >
+                    漫画「uturu」
                   </Text>
                   <Text
                     fontSize="14px"
@@ -346,22 +362,6 @@ export default function UturuTemp() {
                       Read more
                     </Text>
                   </Link>
-                  <Text
-                    fontSize="15px"
-                    fontWeight="bold"
-                    fontFamily="japanese2"
-                    mt={7}
-                  >
-                    水いらず 井上真（vo,gt）のコメント
-                  </Text>
-                  <Text
-                    fontSize="14px"
-                    fontWeight="bold"
-                    fontFamily="japanese2"
-                    mt={1}
-                  >
-                    　「ここ一年、「uturu」のことばかりを考えてきました。この曲では主観を切り離し、コンセプトをできるだけ構造的に表現しようと意識してましたが、結果的にメンバーそれぞれの実存というべきか、1年間感じたことや考えたことが多分に反映された作品となってしまいました。今振り返ってみるとこれで良かったと思っています。この楽曲が皆さんの血肉となることを祈っております。」
-                  </Text>
                 </GridItem>
 
                 <GridItem colSpan={2} mt={10}>
@@ -1048,6 +1048,49 @@ export default function UturuTemp() {
                   >
                     　「ここ一年、「uturu」のことばかりを考えてきました。この曲では主観を切り離し、コンセプトをできるだけ構造的に表現しようと意識してましたが、結果的にメンバーそれぞれの実存というべきか、1年間感じたことや考えたことが多分に反映された作品となってしまいました。今振り返ってみるとこれで良かったと思っています。この楽曲が皆さんの血肉となることを祈っております。」
                   </Text>
+                </GridItem>
+
+                <GridItem colStart={3} colSpan={8}>
+                  <Center>
+                    <VStack>
+                      <Text
+                        fontSize="18px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        textColor="#55499b"
+                      >
+                        漫画「uturu」
+                      </Text>
+                      <Text
+                        fontSize="14px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        mt={1}
+                        mb={5}
+                      >
+                        作：内田晟
+                      </Text>
+                    </VStack>
+                  </Center>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga1.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                    />
+                  </AspectRatio>
+                  <Link href="/Comic">
+                    <Text
+                      fontSize="18px"
+                      fontWeight="bold"
+                      fontFamily="japanese2"
+                      textColor="#55499b"
+                      as="u"
+                    >
+                      Read more
+                    </Text>
+                  </Link>
                 </GridItem>
 
                 <GridItem colSpan={12}>
