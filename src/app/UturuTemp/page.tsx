@@ -313,6 +313,43 @@ export default function UturuTemp() {
                     fontSize="15px"
                     fontWeight="bold"
                     fontFamily="japanese2"
+                    textColor="#55499b"
+                    mt={7}
+                  >
+                    「uturu」をイメージ元とした漫画
+                  </Text>
+                  <Text
+                    fontSize="14px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
+                    mt={1}
+                    mb={2}
+                  >
+                    作：内田晟
+                  </Text>
+                  <AspectRatio ratio={32 / 45}>
+                    <Box
+                      backgroundImage="url('/manga1.jpeg')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.2)"
+                    />
+                  </AspectRatio>
+                  <Link href="/Comic">
+                    <Text
+                      fontSize="18px"
+                      fontWeight="bold"
+                      fontFamily="japanese2"
+                      textColor="#55499b"
+                      as="u"
+                    >
+                      Read more
+                    </Text>
+                  </Link>
+                  <Text
+                    fontSize="15px"
+                    fontWeight="bold"
+                    fontFamily="japanese2"
                     mt={7}
                   >
                     水いらず 井上真（vo,gt）のコメント
