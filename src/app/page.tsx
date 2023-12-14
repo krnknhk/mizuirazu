@@ -26,28 +26,26 @@ export default function Home() {
   const [isMuted, setIsMuted] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true);
   const [cursorStyle, setCursorStyle] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
 
-  const [play1, { stop: stop1, sound: sound1 }] = useSound(soundFiles[0], {
+  const [play1, { stop: stop1 }] = useSound(soundFiles[0], {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
-  const [play2, { stop: stop2, sound: sound2 }] = useSound(soundFiles[1], {
+  const [play2, { stop: stop2 }] = useSound(soundFiles[1], {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
-  const [play3, { stop: stop3, sound: sound3 }] = useSound(soundFiles[2], {
+  const [play3, { stop: stop3 }] = useSound(soundFiles[2], {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
-  const [play4, { stop: stop4, sound: sound4 }] = useSound("/uturu_edit2.mp3", {
+  const [play4, { stop: stop4 }] = useSound("/uturu_edit2.mp3", {
     loop: true,
     volume: isMuted ? 0 : 1,
   });
 
   const plays = [play1, play2, play3];
   const stops = [stop1, stop2, stop3, stop4];
-  const sounds = [sound1, sound2, sound3, sound4];
   const jpgFiles = ["/20210828_1.jpg", "/20210828_9.jpg", "/20210828_6.jpg"];
 
   const handleScreenClick = () => {
@@ -113,12 +111,6 @@ export default function Home() {
 
     preloadImages();
   }, []);
-
-  useEffect(() => {
-    if (sounds) {
-      setIsLoading(false);
-    }
-  }, [sounds]);
 
   const isSp = useMediaQuery(mediaQuery.sp);
   const isPc = useMediaQuery(mediaQuery.pc);
@@ -208,35 +200,25 @@ export default function Home() {
           </Box>
         )}
         <Flex justifyContent="center" alignItems="center" height="100vh">
-          {isLoading ? (
-            <Spinner size="xl" />
-          ) : (
-            <>
-              {showPlayButton && (
-                <Button
-                  leftIcon={<FaVolumeUp size={70} />}
-                  color={"#e88700"}
-                  bg={"transparent"}
-                  onClick={handlePlay}
-                ></Button>
-              )}
-              {!showPlayButton && (
-                <Button
-                  leftIcon={
-                    isMuted ? (
-                      <FaVolumeUp size={40} />
-                    ) : (
-                      <FaVolumeMute size={40} />
-                    )
-                  }
-                  color={"black"}
-                  bg={"transparent"}
-                  _hover={{ bg: "transparent" }}
-                  onClick={toggleMute}
-                  m={2}
-                ></Button>
-              )}
-            </>
+          {showPlayButton && (
+            <Button
+              leftIcon={<FaVolumeUp size={70} />}
+              color={"#e88700"}
+              bg={"transparent"}
+              onClick={handlePlay}
+            ></Button>
+          )}
+          {!showPlayButton && (
+            <Button
+              leftIcon={
+                isMuted ? <FaVolumeUp size={40} /> : <FaVolumeMute size={40} />
+              }
+              color={"black"}
+              bg={"transparent"}
+              _hover={{ bg: "transparent" }}
+              onClick={toggleMute}
+              m={2}
+            ></Button>
           )}
         </Flex>
       </Box>
@@ -308,38 +290,28 @@ export default function Home() {
           </VStack>
         </Box>
         <Flex justifyContent="center" alignItems="center" height="100vh">
-          {isLoading ? (
-            <Spinner size="xl" />
-          ) : (
-            <>
-              {showPlayButton && (
-                <Button
-                  leftIcon={<FaVolumeUp size={100} />}
-                  bg={"transparent"}
-                  color={"#e88700"}
-                  _hover={{
-                    color: "rgba(232, 135, 0, 0.6)",
-                    bg: "transparent",
-                  }}
-                  onClick={handlePlay}
-                ></Button>
-              )}
-              {!showPlayButton && (
-                <Button
-                  onClick={toggleMute}
-                  m={2}
-                  leftIcon={
-                    isMuted ? (
-                      <FaVolumeUp size={50} />
-                    ) : (
-                      <FaVolumeMute size={50} />
-                    )
-                  }
-                  bg={"transparent"}
-                  _hover={{ color: "#e88700", bg: "transparent" }}
-                ></Button>
-              )}
-            </>
+          {showPlayButton && (
+            <Button
+              leftIcon={<FaVolumeUp size={100} />}
+              bg={"transparent"}
+              color={"#e88700"}
+              _hover={{
+                color: "rgba(232, 135, 0, 0.6)",
+                bg: "transparent",
+              }}
+              onClick={handlePlay}
+            ></Button>
+          )}
+          {!showPlayButton && (
+            <Button
+              onClick={toggleMute}
+              m={2}
+              leftIcon={
+                isMuted ? <FaVolumeUp size={50} /> : <FaVolumeMute size={50} />
+              }
+              bg={"transparent"}
+              _hover={{ color: "#e88700", bg: "transparent" }}
+            ></Button>
           )}
         </Flex>
       </Box>
