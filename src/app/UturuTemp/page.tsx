@@ -209,7 +209,7 @@ export default function UturuTemp() {
                       fontWeight="bold"
                       fontFamily="japanese"
                     >
-                      下田開登(ex PICNIC YOU、跡地/rap)
+                      下田開登(PICNIC YOU/rap)
                     </Text>
                   </Box>
                   <Box mt={5}>
@@ -892,7 +892,7 @@ export default function UturuTemp() {
                       fontWeight="bold"
                       fontFamily="japanese"
                     >
-                      下田開登(ex PICNIC YOU、跡地/rap)
+                      下田開登(PICNIC YOU/rap)
                     </Text>
                   </Box>
                   <Box mt={5}>
