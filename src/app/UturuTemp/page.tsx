@@ -332,7 +332,7 @@ export default function UturuTemp() {
                         fontWeight="bold"
                         fontFamily="japanese2"
                         textColor="#55499b"
-                        mt={12}
+                        mt={10}
                       >
                         漫画「uturu」
                       </Text>
@@ -341,7 +341,7 @@ export default function UturuTemp() {
                         fontWeight="bold"
                         fontFamily="japanese2"
                         mt={1}
-                        mb={5}
+                        mb={3}
                       >
                         作：内田晟
                       </Text>
