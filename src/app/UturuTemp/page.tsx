@@ -325,24 +325,28 @@ export default function UturuTemp() {
                   >
                     　「ここ一年、「uturu」のことばかりを考えてきました。この曲では主観を切り離し、コンセプトをできるだけ構造的に表現しようと意識してましたが、結果的にメンバーそれぞれの実存というべきか、1年間感じたことや考えたことが多分に反映された作品となってしまいました。今振り返ってみるとこれで良かったと思っています。この楽曲が皆さんの血肉となることを祈っております。」
                   </Text>
-                  <Text
-                    fontSize="16px"
-                    fontWeight="bold"
-                    fontFamily="japanese2"
-                    textColor="#55499b"
-                    mt={10}
-                  >
-                    漫画「uturu」
-                  </Text>
-                  <Text
-                    fontSize="14px"
-                    fontWeight="bold"
-                    fontFamily="japanese2"
-                    mt={1}
-                    mb={2}
-                  >
-                    作：内田晟
-                  </Text>
+                  <Center>
+                    <VStack>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        textColor="#55499b"
+                        mt={12}
+                      >
+                        漫画「uturu」
+                      </Text>
+                      <Text
+                        fontSize="14px"
+                        fontWeight="bold"
+                        fontFamily="japanese2"
+                        mt={1}
+                        mb={5}
+                      >
+                        作：内田晟
+                      </Text>
+                    </VStack>
+                  </Center>
                   <AspectRatio ratio={32 / 45}>
                     <Box
                       backgroundImage="url('/manga1.jpeg')"
