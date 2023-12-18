@@ -16,7 +16,6 @@ import {
   GridItem,
   HStack,
   Spacer,
-  Spinner,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -26,10 +25,113 @@ import "../../style.css";
 import { mediaQuery, useMediaQuery } from "../../useMediaQuery";
 
 export default function HotondokaraSingle() {
-  const isSp = useMediaQuery(mediaQuery.sp);
   const isPc = useMediaQuery(mediaQuery.pc);
 
-  if (isSp) {
+  if (isPc) {
+    return (
+      <>
+        <Flex
+          direction="column"
+          background="linear-gradient(to bottom, #55499b 30%, #dce0f2 30%, #e8e8e8)"
+          minH="100vh"
+        >
+          <Menu></Menu>
+          <Box ml={300} mt={55} color="#e8e8e8" fontFamily="english">
+            <Breadcrumb>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/" _hover={{ color: "#e88700" }}>
+                  Home
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbItem>
+                <BreadcrumbLink
+                  href="/Discography"
+                  _hover={{ color: "#e88700" }}
+                >
+                  Discography
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbItem isCurrentPage>
+                <BreadcrumbLink href="#">
+                  <Text fontFamily="japanese">ほとんど、空</Text>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+            </Breadcrumb>
+            <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
+          </Box>
+          <Center>
+            <Box width="80%" minH="70vh" backgroundColor="#f4f4ed" mt={"10vh"}>
+              <Grid templateColumns="repeat(12, 1fr)" gap={20} m={10}>
+                <GridItem colSpan={6}>
+                  <AspectRatio ratio={1}>
+                    <Box
+                      backgroundImage="url('/almostEmpty_single.png')"
+                      backgroundRepeat="no-repeat"
+                      backgroundSize="cover"
+                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
+                    />
+                  </AspectRatio>
+                </GridItem>
+
+                <GridItem colSpan={6}>
+                  <Text fontSize="30px" fontWeight="bold">
+                    ほとんど、空
+                  </Text>
+                  <Box mt={2}>
+                    <Text fontSize="16px" fontFamily="english">
+                      Digital Single - 2020.11.21
+                    </Text>
+                  </Box>
+                  <Box mt={7}>
+                    <Text
+                      fontSize="16px"
+                      fontFamily="english"
+                      color={"#55499b"}
+                    >
+                      TRACKLISTING
+                    </Text>
+                  </Box>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={3}
+                  />
+                  <Box mt={1} ml={1}>
+                    <HStack>
+                      <Text
+                        fontSize="16px"
+                        fontWeight="bold"
+                        fontFamily="english2"
+                      >
+                        1　
+                      </Text>
+                      <Text fontSize="15px" fontWeight="500">
+                        ほとんど、空
+                      </Text>
+                      <Spacer />
+                      <Link href="https://open.spotify.com/intl-ja/track/1jiO2B6wcyXmzF1zLBtYee?si=d56fe37ed5d44dbc">
+                        <Box color="#3bd300">
+                          <FaSpotify size={20} />
+                        </Box>
+                      </Link>
+                    </HStack>
+                  </Box>
+                  <Box
+                    height="1px"
+                    backgroundColor="gray.300"
+                    width="100%"
+                    mt={1}
+                  />
+                </GridItem>
+              </Grid>
+            </Box>
+          </Center>
+        </Flex>
+        <Footer></Footer>
+      </>
+    );
+  } else {
     return (
       <>
         <SpMenu />
@@ -143,125 +245,6 @@ export default function HotondokaraSingle() {
         </VStack>
         <Footer></Footer>
       </>
-    );
-  } else if (isPc) {
-    return (
-      <>
-        <Flex
-          direction="column"
-          background="linear-gradient(to bottom, #55499b 30%, #dce0f2 30%, #e8e8e8)"
-          minH="100vh"
-        >
-          <Menu></Menu>
-          <Box ml={300} mt={55} color="#e8e8e8" fontFamily="english">
-            <Breadcrumb>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/" _hover={{ color: "#e88700" }}>
-                  Home
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbItem>
-                <BreadcrumbLink
-                  href="/Discography"
-                  _hover={{ color: "#e88700" }}
-                >
-                  Discography
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href="#">
-                  <Text fontFamily="japanese">ほとんど、空</Text>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-            </Breadcrumb>
-            <Box height="1px" backgroundColor="gray.200" width="90%" mt={3} />
-          </Box>
-          <Center>
-            <Box width="80%" minH="70vh" backgroundColor="#f4f4ed" mt={"10vh"}>
-              <Grid templateColumns="repeat(12, 1fr)" gap={20} m={10}>
-                <GridItem colSpan={6}>
-                  <AspectRatio ratio={1}>
-                    <Box
-                      backgroundImage="url('/almostEmpty_single.png')"
-                      backgroundRepeat="no-repeat"
-                      backgroundSize="cover"
-                      boxShadow="0px 0px 10px 0px rgba(0,0,0,0.5)"
-                    />
-                  </AspectRatio>
-                </GridItem>
-
-                <GridItem colSpan={6}>
-                  <Text fontSize="30px" fontWeight="bold">
-                    ほとんど、空
-                  </Text>
-                  <Box mt={2}>
-                    <Text fontSize="16px" fontFamily="english">
-                      Digital Single - 2020.11.21
-                    </Text>
-                  </Box>
-                  <Box mt={7}>
-                    <Text
-                      fontSize="16px"
-                      fontFamily="english"
-                      color={"#55499b"}
-                    >
-                      TRACKLISTING
-                    </Text>
-                  </Box>
-                  <Box
-                    height="1px"
-                    backgroundColor="gray.300"
-                    width="100%"
-                    mt={3}
-                  />
-                  <Box mt={1} ml={1}>
-                    <HStack>
-                      <Text
-                        fontSize="16px"
-                        fontWeight="bold"
-                        fontFamily="english2"
-                      >
-                        1　
-                      </Text>
-                      <Text fontSize="15px" fontWeight="500">
-                        ほとんど、空
-                      </Text>
-                      <Spacer />
-                      <Link href="https://open.spotify.com/intl-ja/track/1jiO2B6wcyXmzF1zLBtYee?si=d56fe37ed5d44dbc">
-                        <Box color="#3bd300">
-                          <FaSpotify size={20} />
-                        </Box>
-                      </Link>
-                    </HStack>
-                  </Box>
-                  <Box
-                    height="1px"
-                    backgroundColor="gray.300"
-                    width="100%"
-                    mt={1}
-                  />
-                </GridItem>
-              </Grid>
-            </Box>
-          </Center>
-        </Flex>
-        <Footer></Footer>
-      </>
-    );
-  } else {
-    return (
-      <Box
-        height="100vh"
-        display="flex"
-        justifyContent="center"
-        alignItems={"center"}
-        backgroundColor={"gray.200"}
-      >
-        <VStack>
-          <Text>Loading...</Text>
-          <Spinner size="xl" />
-        </VStack>
-      </Box>
     );
   }
 }
